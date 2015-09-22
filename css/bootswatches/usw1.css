@@ -4,6 +4,7 @@
  * 
  * Customisations made in this file:
  * 1 Panel body has been given the same background colour as panel heading for each sub-type
+ * 2 Alter a link color for panel-success to avoid red on green issue
  */
 
 /*!
@@ -1113,6 +1114,9 @@ textarea {
 a {
   color: #be0f34;
   text-decoration: none;
+}
+.panel-success a{
+    color: #455f12;
 }
 a:hover,
 a:focus {
