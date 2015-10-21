@@ -2,7 +2,7 @@
 			<?php
 			//Tool name
 			$name='screensharing';
-			$title='Screen Sharing';
+			$title='Screen Sharing<br /><b>REVIEW - IF we are going for separate tools in this list rather than functions, then this should not be here - it would come down as Collaborate through the selector</b>';
 			$text='Share your desktop and applications to demonstrate via web-conferene tools';
 			$software='Collaborate';
 

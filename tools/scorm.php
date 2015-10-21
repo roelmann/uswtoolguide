@@ -2,7 +2,7 @@
 			<?php
 			//Tool name
 			$name='scorm';
-			$title='SCORM';
+			$title='SCORM - REVIEW:No-one is currently using this, should we include it or not?';
 			$text='Use to present content, media and interactive activities from external sources.';
 			$software='Blackboard';
 
@@ -26,7 +26,8 @@
 			$textB='6/6 - but depends on the actual SCORM activity used. Can do all 6 with some planning and creative learning design.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Full guides coming soon. If you are interested in using this tool please <a href='http://teach.southwales.ac.uk/help-support'>contact the TEL team</a> for help.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

@@ -3,30 +3,31 @@
 			//Tool name
 			$name='lessonplan';
 			$title='Lesson Plan';
-			$text='Use to present lesson profiles, objectives and materials.';
+			$text='Content container (similar to a folder) designed to let students view the lesson content alongside instructional objectives.';
 			$software='Blackboard';
 
 			// Ease of Use
 			$styleEU='warning';
-			$textEU='Takes some time and planning to set up properly.';
+			$textEU='Not difficult but requires some preparation and planning of what it will contain and how to layout.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. This tool is about passing information to the students about the structure of the module.';
+			$textIT='Yes. Only tutors can create lesson plans so definitely a "push" tool.';
 			// Assess Learning
 			$styleAL='danger';
-			$textAL='No. This is a "push" tool for information and would not be best suited for information about a particular assessment.';
+			$textAL='No. Lesson are simply storage containers for organising content (that may include assessments).';
 			// Communication & Interaction
 			$styleCI='danger';
-			$textCI='No. This is a "push" tool to provide information. There are no opportunities for interaction.';
+			$textCI='No. Lesson are simply storage containers for organising content (that may include interactive elements).';
 			// Co-Creation of Content
 			$styleCC='danger';
-			$textCC='No. This is a "push" tool to provide information. There are no opportunities for collaboration.';
+			$textCC='No. Lesson are simply storage containers for organising content.';
 			// Blooms
 			$styleB='danger';
-			$textB='None. This is an information trasnfer tool, not a learning activity.';
+			$textB='None. This is information transfer and not a learning activity.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>The Lesson Plan feature enables you to create a structured unit plan with distinct and customizable sections that provide a means of documenting information such as description, learning level, delivery instructions, and so on. Lesson Plans also include content designed for an individual unit using any type of content or tool enabled in the Course. Full guides coming soon. If you are interested in using this tool please <a href='http://teach.southwales.ac.uk/help-support/'>contact the TEL team</a> for help. </p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

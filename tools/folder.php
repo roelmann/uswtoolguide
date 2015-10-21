@@ -26,7 +26,8 @@
 			$textB='No. Folders are a content structure for organising content, they are not a learning activity.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Folders are a content organisation tool. They allow a defined structure of content to be created, with other resources (items, files, pages, links, etc) being added within the folders.</p><p>For more information on managing folders in your module see the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building Content pages on Teach</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

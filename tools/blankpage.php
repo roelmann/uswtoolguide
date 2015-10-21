@@ -3,7 +3,7 @@
 			//Tool name
 			$name='blankpage';
 			$title='Blank Page';
-			$text='Upload a file - e.g. Word, Powerpoint, PDF';
+			$text='Create a separate blank content page within your module';
 			$software='Blackboard';
 
 			// Ease of Use
@@ -26,7 +26,8 @@
 			$textB='None. This is not a learning activity, but information transfer.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>Blank Page</h3>
+			<p>Pages make use of the same content as adding content items to your module. However, they allow the content to be organised onto a separate page rather than directly on the module. The page can be accessed via a link in the main module content.</p><p>You can find additional support on the <a href='http://teach.southwales.ac.uk/blackboard/building'>TEACH Building your content pages</a> and on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1024777_1'>Enhancing Learning Through Technology organisation in Blackboard</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

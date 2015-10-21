@@ -26,7 +26,8 @@
 			$textB='Depends on the link provided and what learning activities are available on the external link.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Use URL links to provide links to other resources, either on your module, within other areas of Blackboard/UniLearn, or externally.</p><p>For more information and support see the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building your Content pages on Teach</a> and the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1024777_1'>Enhancing Learning Through Technology organisation on Blackboard</a></p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

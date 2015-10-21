@@ -27,16 +27,7 @@
 
 			// Additional info
 			$additional="<h3>Embedded Audio</h3>
-			<p>Select an audio file to play on the page. If Autostart and Loop are both set to Yes, the audio file will begin playing when users open the page and will continue to play until they stop it or navigate away from the page. Include a transcript for those that cannot hear the audio file.<br>
-		Audio files come in a variety of formats and will spawn a compatible player based on the user's computer system. Audio files have one of the following extensions: .aiff, .mp3, .midi, .mp, .wav, or .wma.</p>
-		<h4>Audio Options</h4>
-		<p>Select <strong>AutoStart</strong> to begin playing the file as soon as the link is clicked or allow the user to start the file using the controls. Select to <strong>Loop</strong> the file so it keeps playing over and over or play the file once. The Controls can appear full-sized or the controls can appear smaller, like a thumbnail, by selecting <strong>Mini</strong>.</p>
-		<h4>Item Availability</h4>
-		<p>Select <strong>No</strong> to restrict users from listening to the audio file. This will make the audio file unavailable from this location. It will not affect the availability of the audio file if it can be accessed another way, such as through the Content Collection or in another folder. For example, if an audio file is added to a folder from Course Files and made unavailable, the audio file would not appear in that folder. However, the audio file could still be displayed in a different folder if there was another link to it that was available. </p>
-		<h4>Tracking</h4>
-		<p>To turn on Tracking Statistics for the audio file, select <strong>Yes</strong> for Track Number of Views. Tracking Statistics will record the number of times that the audio file is opened, when it is opened and by whom.</p>
-		<h4>Date and Time Restrictions</h4>
-		<p>Files can be set to appear on a specific date and time and to hide on a specific date and time. Date and time restrictions do not affect content availability, only the appearance of the content in the folder.</p>";
+			<p>Audio can be used to create content which is more engaging and memorable than text alone. The <a href='http://teach.southwales.ac.uk/media/audio'>TEACH pages on enhancing your content</a> will help you identify where to find audio content and give you the skills to create audio content for your modules, along with the related pages on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1021159_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

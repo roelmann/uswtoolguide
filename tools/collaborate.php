@@ -1,21 +1,20 @@
 		<div class="row clearfix flex-container">
 			<?php
 			//Tool name
-			$name='chat';
-			$title='Chat (text based)';
-			$text='Hold real-time text based chat discussions with the class';
+			$name='collaborate';
+			$title='Collaborate';
+			$text='Hold real-time audio/video (web-cam) based chat discussions with the class.';
 			$software='Collaborate';
 
 			// Ease of Use
-			$styleEU='warning';
-			$textEU='Quite easy to set up. Requires some planning to manage and moderate';
+			$styleEU='success';
+			$textEU='Quite easy to set up. Requires some planning to manage and moderate. TEACH pages available for support.';
 			// Information Transfer
-			$styleIT='warning';
-			$textIT='Maybe. Use for invited speakers. High speed message volume. Risks of non-interaction';
+			$styleIT='success';
+			$textIT='Yes. Collaborate for interaction/collaborate sessions. Use for invited speakers. High speed message volume. Risks of non-interaction.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Maybe. Chats are versatile and can be used in formative assessment activities if planned well.
-';
+			$textAL='Maybe. Chats are versatile and can be used in formative assessment activities e.g.Polling activity in Collaborate.';
 			// Communication & Interaction
 			$styleCI='success';
 			$textCI='Yes. Hold debates, small group review sessions, drop-in and Q&A sessions';
@@ -27,9 +26,8 @@
 			$textB='5/6 understand, apply, analyse, evaluate, create';
 
 			// Additional info
-			$additional="<h3>Chat</h3>
-			<p>UniLearn does not include a specific Chat tool. However, the webconferencing tool Collaborate can be used to facilitate a chat discussion which may be text based or audio/video depending on the requirements of the session being run.</p>
-			<p>You can find more information about using <a href='http://teach.southwales.ac.uk/collaborate'>Collaborate on the Teach channel</a>.</p>";
+			$additional="<h3>".$title."</h3>
+			<p>http://its.southwales.ac.uk/documents/download/38/  http://teach.southwales.ac.uk/collaborate/</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

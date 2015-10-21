@@ -13,20 +13,21 @@
 			$styleIT='success';
 			$textIT='A way to present information to students in a "book" style format.';
 			// Assess Learning
-			$styleAL='warning';
-			$textAL='Maybe. Use to present the task, then collect student files through forum discussions or assessments.';
+			$styleAL='danger';
+			$textAL='No. Its a distribution tool. Although it can be used to communicate information about assessments which are then collected through a different tool.';
 			// Communication & Interaction
 			$styleCI='warning';
 			$textCI='Maybe. Link to external webpages or embed interactive widgets within the pages of the learning module.';
 			// Co-Creation of Content
 			$styleCC='danger';
-			$textCC='No. Learning modules are primrily used to present information, although they could contain links to external collaborative activities.';
+			$textCC='No. Learning modules are primarily used to present information, although they could contain links to external collaborative activities.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is information transfer and not a learning activity.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Use learning modules to organise a series of pages, within the current page, to engage students or provide information about other resources, rather than as files which need to be downloaded to open, or folders which open separately.</p><p>For more information and support about managing your content see the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building your Content pages on Teach</a> and the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1024777_1'>Enhancing Learning Through Technology organisation on Blackboard</a></p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

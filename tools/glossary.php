@@ -3,7 +3,7 @@
 			//Tool name
 			$name='glossary';
 			$title='Glossary';
-			$text='Use for learning activities that gather resources or present information.';
+			$text='Use for presenting resources and information that can be categorised.';
 			$software='Blackboard';
 
 			// Ease of Use
@@ -26,7 +26,8 @@
 			$textB='None. Glossaries are an information transfer tool not a learning activity.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p><a href='https://en-us.help.blackboard.com/Learn/9.1_Older_Versions/9.1_SP_12_and_SP_13/Instructor/060_Course_Tools/Glossary'>Blackboard Help - Glossaries</a></p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

@@ -3,7 +3,7 @@
 			//Tool name
 			$name='image';
 			$title='Images';
-			$text='Present images directly on the module page';
+			$text='Present images directly on the module page - but can also be used in Blogs/Wikis/Forum posts';
 			$software='Blackboard';
 
 			// Ease of Use
@@ -14,19 +14,20 @@
 			$textIT='Yes. Only tutors can add images onto module pages so primarily a "push" tool.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Maybe. Images are a "push" tool to display on the module page. However, all users can add images into fourm posts';
+			$textAL='Maybe. Images can be added into fourm posts, blogs, wikis or any other area where students can create content.';
 			// Communication & Interaction
 			$styleCI='warning';
-			$textCI='Maybe. Images are a "push" tool to display on the module page. However, all users can add images into fourm posts';
+			$textCI='Maybe. Images can be added into fourm posts, blogs, wikis or any other area where students can create content.';
 			// Co-Creation of Content
-			$styleCC='danger';
-			$textCC='No. Images cannot be worked on together. They must be saved on the computer and then uploaded, or linked as a URL.';
+			$styleCC='warning';
+			$textCC='Maybe. Images can be added into fourm posts, blogs, wikis or any other area where students can create content.';
 			// Blooms
-			$styleB='danger';
-			$textB='None. This is information transfer and not a learning activity.';
+			$styleB='Maybe';
+			$textB='5/6 <br />Understand, Apply, Analyse, Evaluate, Create.<br />When used by students in blogs/wikis/forums';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Consider the copyright implications of any images used - if you are unsure, then it is best to stick to Creative Commons images and ensure you comply with the appropriate licence (e.g. attribution)</p><p>You can find more information about using images on the <a href='http://teach.southwales.ac.uk/media/images/'>Media pages of Teach</a> and in the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_1066163_1&course_id=_101667_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

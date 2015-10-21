@@ -14,7 +14,7 @@
 			$textIT='Share resources as links or files. Caution over high message volume and risk of losing info.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Discussions are versatile & allow this with some learning design.';
+			$textAL="Discussions are versatile & allow this with some learning design. They link seemlessly with Blackboard's gradecentre";
 			// Communication & Interaction
 			$styleCI='success';
 			$textCI='Yes. Students communicate with you & peers. They can interact as a class or in groups.';
@@ -26,7 +26,8 @@
 			$textB='5/6 <br />Understand, Apply, Analyse, Evaluate, Create';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Discussion Forums are a powerful and easy to set up tool, allowing communication and interaction within your module. Some thought is needed to ensure best use is made of the forums through good moderation and communication practices.</p><p>You can read more on the <a href='http://teach.southwales.ac.uk/blackboard/communicating_online/#discussion'>Communicating pages On Teach</a> and in the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_1044642_1&course_id=_101667_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

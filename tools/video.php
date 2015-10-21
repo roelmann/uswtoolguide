@@ -14,19 +14,20 @@
 			$textIT='Yes. Only tutors can add videos onto module pages so primarily a "push" tool.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Maybe. Videos are a "push" tool to display on the module page. However, all users can add videos into fourm posts';
+			$textAL='Maybe. Videos are a "push" tool to display on the module page. However, all users can add videos into fourm posts, blogs, or assignment submissions';
 			// Communication & Interaction
 			$styleCI='warning';
-			$textCI='Maybe. Videos are a "push" tool to display on the module page. However, all users can add videos into fourm posts';
+			$textCI='Maybe. Videos are a "push" tool to display on the module page. However, users can work collaboratively to create videos before they are added to the module through blogs or forum posts etc.';
 			// Co-Creation of Content
-			$styleCC='danger';
-			$textCC='No. Videos cannot be worked on together. They must be saved on the computer and then uploaded, or linked as a URL.';
+			$styleCC='warning';
+			$textCC='Maybe. Videos are a "push" tool to display on the module page. However, users can work collaboratively to create videos before they are added to the module through blogs or forum posts etc.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is information transfer and not a learning activity.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>Embedded Video</h3>
+			<p>Video can be used to create content which is more engaging and memorable than text alone. The <a href='http://teach.southwales.ac.uk/media/video'>TEACH pages on enhancing your content</a> will help you identify where to find video content and give you the skills to create video content for your modules, along with the related pages on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1021159_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

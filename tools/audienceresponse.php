@@ -4,14 +4,14 @@
 			$name='audienceresponse';
 			$title='Audience Reponse';
 			$text='Voting systems which allow audience responses within a face-face environment.';
-			$software='Collaborate, Voting systems';
+			$software='Voting systems eg. Turning Point';
 
 			// Ease of Use
 			$styleEU='warning';
 			$textEU='Not difficult, but can take some thought to set up well to ensure good engagement';
 			// Information Transfer
 			$styleIT='warning';
-			$textIT='Maybe. This is primarily a tool for audience engagement and response, although it can be tied in with presentations or other information transfer tools';
+			$textIT='Maybe. This is primarily a tool for audience engagement and response, although it is usually tied in with presentations or other information transfer tools';
 			// Assess Learning
 			$styleAL='success';
 			$textAL='Yes. Audience response systems can be used to judge understanding of sessions and discussions.';
@@ -26,7 +26,8 @@
 			$textB='6/6 Can do all 6 with some planning and creative learning design.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>Audience Response</h3>
+			<p>There are a number of Turning Point audience response systems available for small groups within the university. LRC hold one set, while others are held in some faculties.</p><p>Note: Collaborate also has voting features, but this is more suitable for online sessions.</p><p>For more detailed advice see the <a href='http://teach.southwales.ac.uk/voting/'>Voting page on TEACH</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

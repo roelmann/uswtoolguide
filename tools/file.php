@@ -13,20 +13,21 @@
 			$styleIT='success';
 			$textIT='Yes. Only tutors can upload files to modules, so this is definitely a "push" tool.';
 			// Assess Learning
-			$styleAL='warning';
-			$textAL='Maybe. Use to give a task. Student files can be collected through forums or assignments.';
+			$styleAL='danger';
+			$textAL='No. Its a distribution tool. Although it can be used to communicate information about assessments which are then collected through a different tool.';
 			// Communication & Interaction
 			$styleCI='danger';
 			$textCI='No. Its a distribution tool. No option for interaction or 2-way communication.';
 			// Co-Creation of Content
-			$styleCC='warning';
-			$textCC='Maybe. Use to give a task. Student files can be collected through forums or assignments.';
+			$styleCC='danger';
+			$textCC='No. Its a distribution tool. No option for interaction or 2-way communication.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is not a learning activity, but information transfer.';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>Files are used where it is not appropriate to display the content directly on the web page. When planning to use files, consider the format being used to ensure your students can access it easily. eg. pdf files may display better on mobie devices than Word or Powerpoint files, but can't be edited by the student as easily.</p><p>For more information on using files in your module see the <a href='http://teach.southwales.ac.uk/blackboard/files/'>Files pages on Teach</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

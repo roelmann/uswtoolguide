@@ -4,7 +4,7 @@
 			$name='wiki';
 			$title='Wiki';
 			$text='Enables collaborative content creation.';
-			$software='Blackboard, Campus Pack';
+			$software='Blackboard';
 
 			// Ease of Use
 			$styleEU='warning';
@@ -26,7 +26,8 @@
 			$textB='5/6<ul><li>Understand</li><li>Apply</li><li>Analyse</li><li>Evaluate</li><li>create</li></ul>';
 
 			// Additional info
-			$additional="additional info about <b>".$title."</b>.<br />formatted as <a href='http://bbc.co.uk'>html</a>";
+			$additional="<h3>".$title."</h3>
+			<p>http://teach.southwales.ac.uk/blackboard/communicating_online/</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

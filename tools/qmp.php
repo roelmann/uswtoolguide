@@ -2,9 +2,9 @@
 			<?php
 			//Tool name
 			$name='quiz';
-			$title='Tests';
+			$title='QMP';
 			$text='Use to assess learning, whether formative or summative.';
-			$software='Blackboard';
+			$software='QuestionMark Perception';
 
 			// Ease of Use
 			$styleEU='danger';
@@ -27,7 +27,7 @@
 
 			// Additional info
 			$additional="<h3>".$title."</h3>
-			<p>For information on using Tests please see the  <a href='http://teach.southwales.ac.uk/assessment/'>Quiz pages on Teach</a>.</p><p>Note: QuentionMark Perception (QMP) can also be used for carrying our quizes and tests, while Blackboard Surveys can be used for non-assessed quizes such as self-study reflection or feedback - see those separate tools for more information.</p>";
+			<p>For information on using QMP please see the  <a href='http://teach.southwales.ac.uk/assessment/'>Quiz pages on Teach</a>.</p><p>Note: Blackboard Tests can also be used for carrying our quizes and tests, while Blackboard Surveys can be used for non-assessed quizes such as self-study reflection or feedback - see those separate tools for more information.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);
