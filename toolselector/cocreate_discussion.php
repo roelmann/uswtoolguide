@@ -12,8 +12,8 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("cocreate");
-				cocreateselector("individual");
-				selectortooldetail("glossary","");
+				cocreateselector("discuss");
+				selectortooldetail("forum","");
 			?>
 			
 			

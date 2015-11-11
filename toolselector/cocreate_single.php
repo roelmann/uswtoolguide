@@ -12,8 +12,9 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("cocreate");
-				cocreateselector("everyone");
-				selectortooldetail("database","");
+				cocreateselector("single");
+				cocreate_singleselector("");
+
 			?>
 			
 			

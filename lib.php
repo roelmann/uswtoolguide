@@ -96,7 +96,7 @@ function selectortooldetail ($name, $additional) {
  */
 function firstselector ($selected) {
 	$transferpanel=$assesspanel=$interactpanel=$cocreatepanel="panel panel-warning flex-item";
-	$assesspanel=$cocreatepanel="panel panel-brand flex-item";
+	$assesspanel="panel panel-brand flex-item";
 	if ($selected=="transfer") {$transferpanel="panel panel-success flex-item";}
 	if ($selected=="assess") {$assesspanel="panel panel-success flex-item";}
 	if ($selected=="interact") {$interactpanel="panel panel-success flex-item";}
@@ -581,29 +581,44 @@ function communicate_single_multimedia_captureselector($selected) {
 			</div>
 <?php
 }
+
 /* Functions for the CoCreation section of the decision tree
  * ------------------------------------------------------------------------------
  */
 function cocreateselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
-	if ($selected=="multiple") {$one_panel="panel panel-success flex-item";}
-	if ($selected=="everyone") {$two_panel="panel panel-success flex-item";}
-	if ($selected=="individual") {$three_panel="panel panel-success flex-item";}
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="single") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="discuss") {$two_panel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
-				<a href="cocreate_multiple.php" class="<?php echo $one_panel?>">
+				<a href="cocreate_single.php" class="<?php echo $one_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Multiple Authors</h4>
+						<h4>Single Document</h4>
 					</div>
 				</a>
-				<a href="cocreate_everyone.php" class="<?php echo $two_panel?>">
+				<a href="cocreate_discussion.php" class="<?php echo $two_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Sharing information from everyone</h4>
+						<h4>Discussion</h4>
 					</div>
 				</a>
-				<a href="cocreate_individual.php" class="<?php echo $three_panel?>">
+			</div>
+<?php
+}
+
+function cocreate_singleselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="oneauthor") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="manyauthors") {$two_panel="panel panel-success flex-item";}
+?>
+				<div class="flex-container">
+				<a href="cocreate_single_one.php" class="<?php echo $one_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Curate individual works</h4>
+						<h4>1 Author, multiple responses</h4>
+					</div>
+				</a>
+				<a href="cocreate_single_many.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Many authors</h4>
 					</div>
 				</a>
 			</div>

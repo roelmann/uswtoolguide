@@ -12,7 +12,8 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("cocreate");
-				cocreateselector("multiple");
+				cocreateselector("single");
+				cocreate_singleselector("manyauthors");
 				selectortooldetail("wiki","");
 			?>
 			
