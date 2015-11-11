@@ -30,7 +30,12 @@
 			<p>http://its.southwales.ac.uk/documents/download/38/  http://teach.southwales.ac.uk/collaborate/</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

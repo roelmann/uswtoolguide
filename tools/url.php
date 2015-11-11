@@ -30,7 +30,12 @@
 			<p>Use URL links to provide links to other resources, either on your module, within other areas of Blackboard/UniLearn, or externally.</p><p>For more information and support see the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building your Content pages on Teach</a> and the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1024777_1'>Enhancing Learning Through Technology organisation on Blackboard</a></p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

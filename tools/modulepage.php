@@ -30,7 +30,12 @@
 			<p>Module aims, learning outcomes and assessment details are all pulled from the ICIS database. Any errors must be corrected there (see your faculty administrators).  For information on editing the additional information and learning materials overview please see the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building Content TEACH pages</a>.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

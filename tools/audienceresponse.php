@@ -30,7 +30,12 @@
 			<p>There are a number of Turning Point audience response systems available for small groups within the university. LRC hold one set, while others are held in some faculties.</p><p>Note: Collaborate also has voting features, but this is more suitable for online sessions.</p><p>For more detailed advice see the <a href='http://teach.southwales.ac.uk/voting/'>Voting page on TEACH</a>.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

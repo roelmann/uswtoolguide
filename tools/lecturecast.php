@@ -30,7 +30,12 @@
 			<p>For further information about Panopto, including step-cy-stpe guides please see the <a href='http://teach.southwales.ac.uk/media/lecture-capture/'>Media pages on Teach</a>.</p><p>Note: other tools such as Collaborate may also be used to record sessions taking place. Please see the individual tools for more information and the Tool Selector for help in determining which tool is most appropriate for your use.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

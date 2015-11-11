@@ -30,7 +30,12 @@
 			<p>Consider the copyright implications of any images used - if you are unsure, then it is best to stick to Creative Commons images and ensure you comply with the appropriate licence (e.g. attribution)</p><p>You can find more information about using images on the <a href='http://teach.southwales.ac.uk/media/images/'>Media pages of Teach</a> and in the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_1066163_1&course_id=_101667_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

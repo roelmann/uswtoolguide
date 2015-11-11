@@ -30,7 +30,12 @@
 			<p><a href='https://en-us.help.blackboard.com/Learn/9.1_Older_Versions/9.1_SP_12_and_SP_13/Instructor/060_Course_Tools/Glossary'>Blackboard Help - Glossaries</a></p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

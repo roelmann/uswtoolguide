@@ -13,31 +13,37 @@ require ('lib.php');
 				<?php require ('tools/title.php'); ?>
 			</div>
 			
-			<?php require ('tools/announce.php'); ?>
-			<?php require ('tools/assignments.php'); ?>
-			<?php require ('tools/audienceresponse.php'); ?>
-			<?php require ('tools/audio.php'); ?>
-			<?php require ('tools/blankpage.php'); ?>
-			<?php require ('tools/chat.php'); ?>
-			<?php require ('tools/collaborate.php'); ?>
-			<?php require ('tools/content.php'); ?>
-			<?php require ('tools/file.php'); ?>
-			<?php require ('tools/folder.php'); ?>
-			<?php require ('tools/forum.php'); ?>
-			<?php require ('tools/glossary.php'); ?>
-			<?php require ('tools/image.php'); ?>
-			<?php require ('tools/learningmodule.php'); ?>
-			<?php require ('tools/lecturecast.php'); ?>
-			<?php require ('tools/lessonplan.php'); ?>
-			<?php require ('tools/quiz.php'); ?>
-			<?php require ('tools/qmp.php'); ?>
-			<?php require ('tools/scorm.php'); ?>
-			<?php require ('tools/screensharing.php'); ?>
-			<?php require ('tools/survey.php'); ?>
-			<?php require ('tools/turnitin.php'); ?>
-			<?php require ('tools/url.php'); ?>
-			<?php require ('tools/video.php'); ?>
-			<?php require ('tools/wiki.php'); ?>
+			<?php
+			require ('tools/announce.php');
+			require ('tools/assignments.php');
+			require ('tools/audienceresponse.php');
+			require ('tools/audio.php');
+			require ('tools/blankpage.php');
+			require ('tools/blog.php');
+			require ('tools/chat.php');
+			require ('tools/collaborate.php');
+			require ('tools/content.php');
+			require ('tools/courselink.php');
+			require ('tools/email.php');
+			require ('tools/file.php');
+			require ('tools/folder.php');
+			require ('tools/forum.php');
+			require ('tools/glossary.php');
+			require ('tools/image.php');
+			require ('tools/journal.php');
+			require ('tools/learningmodule.php');
+			require ('tools/lecturecast.php');
+			require ('tools/lessonplan.php');
+			require ('tools/modulepage.php');
+			require ('tools/qmp.php');
+			require ('tools/quiz.php');
+			require ('tools/scorm.php');
+			require ('tools/screensharing.php');
+			require ('tools/survey.php');
+			require ('tools/turnitin.php');
+			require ('tools/url.php');
+			require ('tools/video.php');
+			require ('tools/wiki.php');?>
 
 		</div><!-- Main-Content -->
 	<?php require ('includes/footer.php');?>

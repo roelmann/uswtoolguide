@@ -30,7 +30,12 @@
 			<p>Files are used where it is not appropriate to display the content directly on the web page. When planning to use files, consider the format being used to ensure your students can access it easily. eg. pdf files may display better on mobie devices than Word or Powerpoint files, but can't be edited by the student as easily.</p><p>For more information on using files in your module see the <a href='http://teach.southwales.ac.uk/blackboard/files/'>Files pages on Teach</a>.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

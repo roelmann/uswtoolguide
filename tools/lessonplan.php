@@ -30,7 +30,12 @@
 			<p>The Lesson Plan feature enables you to create a structured unit plan with distinct and customizable sections that provide a means of documenting information such as description, learning level, delivery instructions, and so on. Lesson Plans also include content designed for an individual unit using any type of content or tool enabled in the Course. Full guides coming soon. If you are interested in using this tool please <a href='http://teach.southwales.ac.uk/help-support/'>contact the TEL team</a> for help. </p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

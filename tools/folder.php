@@ -30,7 +30,12 @@
 			<p>Folders are a content organisation tool. They allow a defined structure of content to be created, with other resources (items, files, pages, links, etc) being added within the folders.</p><p>For more information on managing folders in your module see the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building Content pages on Teach</a>.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

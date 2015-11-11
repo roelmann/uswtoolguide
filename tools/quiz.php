@@ -30,7 +30,12 @@
 			<p>For information on using Tests please see the  <a href='http://teach.southwales.ac.uk/assessment/'>Quiz pages on Teach</a>.</p><p>Note: QuentionMark Perception (QMP) can also be used for carrying our quizes and tests, while Blackboard Surveys can be used for non-assessed quizes such as self-study reflection or feedback - see those separate tools for more information.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

@@ -31,7 +31,12 @@
 			<p>You can find information about Announcements in the <a href='http://teach.southwales.ac.uk/blackboard/building/'>Building your Module pages on TEACH</a> and on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1071477_1'>Enhancing Learning Through Technology</a> organisation in Blackboard.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

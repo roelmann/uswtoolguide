@@ -45,6 +45,24 @@ function toolname ($name, $title, $text, $software, $additional) {
 <?php
 }
 
+function toolnamewhenprinting ($name, $title, $text, $software, $additional) {
+?>
+		<form class="flex-item row-header flexrowheader" action="detail.php" method="post" >
+			<input type="hidden" name="tooltype" value="<?php echo $name;?>" >
+			<input type="hidden" name="additional" value="<?php echo $additional;?>" > 
+
+			<div class="panel panel-info flex-item row-header flexrowheader">
+				<div class="panel-heading flexpanelheading">
+					<h3 class="panel-title"><?php echo $title;?></h3>
+					<p class="tool-description"><?php echo $text;?></p>
+					<p class="tool-software"><?php echo $software;?></p>
+				</div>
+			</div>
+		</form>
+
+<?php
+}
+
 function tooldetail ($name, $additional) {
 	$filename='tools/'.$name.'.php';
 ?>
@@ -56,6 +74,30 @@ function tooldetail ($name, $additional) {
 			</a>
 			<p><br /></p>
 			<?php require ($filename); ?>
+
+			<div class='additional panel panel-info'>
+				<div class="panel-body">
+					<?php echo $additional; ?>
+				</div>
+			</div>
+
+		</div><!-- Main-Content -->
+	</div><!-- Main-Container -->
+
+<?php require ('includes/foot.php');
+}
+
+function tooldetailprintlist ($name, $additional) {
+	$filename='tools/'.$name.'.php';
+?>
+	<div class="main-container">
+
+		<div class="main-content detail">
+			<p><br /></p>
+			<?php
+				$printing=1;
+				require ($filename);
+			?>
 
 			<div class='additional panel panel-info'>
 				<div class="panel-body">

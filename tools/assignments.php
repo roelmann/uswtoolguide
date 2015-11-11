@@ -31,7 +31,12 @@
 		<p>Digital technologies are a valuable way of supporting and enhancing how assessment and feedback are delivered. The pages on TEACH contain guides to the different tools available at USW as well as information about the benefits of technology enhanced learning (and the different tools and approaches contained within this). You will also find materials from our Online Assessment and Feedback workshop on the ELTT organisation in Bb http://teach.southwales.ac.uk/assessment/ https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1044599_1</p>
 		<p>Note: As well as Blackboard's own Assignment tool, we support TurnItIn - see the separate tool guide. And assessments can also be carried out using quiz tools, graded forum discussions, blogs or wikis.</p>";
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);

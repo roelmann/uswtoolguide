@@ -30,7 +30,12 @@
 			<p>Discussion Forums are a powerful and easy to set up tool, allowing communication and interaction within your module. Some thought is needed to ensure best use is made of the forums through good moderation and communication practices.</p><p>You can read more on the <a href='http://teach.southwales.ac.uk/blackboard/communicating_online/#discussion'>Communicating pages On Teach</a> and in the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_1044642_1&course_id=_101667_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
-			toolname($name,$title,$text,$software,$additional);
+			if(!$printing){
+				toolname($name,$title,$text,$software,$additional);
+			}
+			else {
+				toolnamewhenprinting($name,$title,$text,$software,$additional);
+			}
 			toolpanel('Ease of Use',$styleEU,$textEU);
 			toolpanel('Information Transfer',$styleIT,$textIT);
 			toolpanel('Assess Learning',$styleAL,$textAL);
