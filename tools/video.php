@@ -27,7 +27,7 @@
 
 			// Additional info
 			$additional="<h3>Embedded Video</h3>
-			<p>Video can be used to create content which is more engaging and memorable than text alone. The <a href='http://teach.southwales.ac.uk/media/video'>TEACH pages on enhancing your content</a> will help you identify where to find video content and give you the skills to create video content for your modules, along with the related pages on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1021159_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
+			<p>Video can be used to create content which is more engaging and memorable than text alone. Videos can be added from saved files on your computer, using the 'Mashup' options to embed web videos, or by creating videos from Panopto or Collaborate and other tools.<br>The <a href='http://teach.southwales.ac.uk/media/video'>TEACH pages on enhancing your content</a> will help you identify where to find video content and give you the skills to create video content for your modules, along with the related pages on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1021159_1'>Enhancing Learning Through Technology organisation on Blackboard</a>.</p>";
 
 			// Display panels
 			toolname($name,$title,$text,$software,$additional);

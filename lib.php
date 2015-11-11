@@ -91,27 +91,31 @@ function selectortooldetail ($name, $additional) {
 <?php require ('includes/foot.php');
 }
 
+/* Functions for the Tool Selector Decision Tree
+ * ------------------------------------------------------------------------------
+ */
 function firstselector ($selected) {
-	$transferpanel=$assesspanel=$interactpanel=$cocreatepanel="panel panel-success flex-item";
-	if ($selected=="transfer") {$transferpanel="panel panel-warning flex-item";}
-	if ($selected=="assess") {$assesspanel="panel panel-warning flex-item";}
-	if ($selected=="interact") {$interactpanel="panel panel-warning flex-item";}
-	if ($selected=="cocreate") {$cocreatepanel="panel panel-warning flex-item";}
+	$transferpanel=$assesspanel=$interactpanel=$cocreatepanel="panel panel-warning flex-item";
+	$assesspanel=$cocreatepanel="panel panel-brand flex-item";
+	if ($selected=="transfer") {$transferpanel="panel panel-success flex-item";}
+	if ($selected=="assess") {$assesspanel="panel panel-success flex-item";}
+	if ($selected=="interact") {$interactpanel="panel panel-success flex-item";}
+	if ($selected=="cocreate") {$cocreatepanel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
-				<a href="transfer.php" class="<?php echo $transferpanel?>">
+				<a href="communicate.php" class="<?php echo $transferpanel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Transfer Information</h4>
+						<h4>Communicate Information</h4>
 					</div>
 				</a>
 				<a href="assess.php" class="<?php echo $assesspanel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Assess</h4>
+						<h4>Assessments</h4>
 					</div>
 				</a>
 				<a href="interact.php" class="<?php echo $interactpanel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Communicate and Interact</h4>
+						<h4>Peer/Student/Tutor Interactions</h4>
 					</div>
 				</a>
 				<a href="cocreate.php" class="<?php echo $cocreatepanel?>">
@@ -122,116 +126,500 @@ function firstselector ($selected) {
 			</div>
 <?php
 }
-function transferselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-success flex-item";
-	if ($selected=="else") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="interactive") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="static") {$three_panel="panel panel-warning flex-item";}
+
+/* Functions for the Peer/Student/Tutor Interactions section of the decision tree
+ * ------------------------------------------------------------------------------
+ */
+function interactselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="one2one") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="group") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="class") {$three_panel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
-				<a href="trans_else.php" class="<?php echo $one_panel?>">
+				<a href="interact_121.php" class="<?php echo $one_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>From Somewhere else</h4>
+						<h4>One-2-One</h4>
 					</div>
 				</a>
-				<a href="trans_interactive.php" class="<?php echo $two_panel?>">
+				<a href="interact_group.php" class="<?php echo $two_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Interactive</h4>
+						<h4>Groups</h4>
 					</div>
 				</a>
-				<a href="trans_static.php" class="<?php echo $three_panel?>">
+				<a href="interact_class.php" class="<?php echo $three_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Static</h4>
+						<h4>Whole Class</h4>
 					</div>
 				</a>
 			</div>
 <?php
 }
-function trans_interactiveselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-success flex-item";
-	if ($selected=="guided") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="update") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="media") {$three_panel="panel panel-warning flex-item";}
-?>
-				<div class="flex-container">
-				<a href="trans_inter_guided.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>As a guided enquiry</h4>
-					</div>
-				</a>
-				<a href="trans_inter_update.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Updatable</h4>
-					</div>
-				</a>
-				<a href="trans_inter_media.php" class="<?php echo $three_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>With multimedia</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-function trans_interactive_mediaselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-success flex-item";
-	if ($selected=="embedded") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="external") {$two_panel="panel panel-warning flex-item";}
-?>
-				<div class="flex-container">
-				<a href="trans_inter_media_embed.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Embedded</h4>
-					</div>
-				</a>
-				<a href="trans_inter_media_external.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Developed externally</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-function trans_staticselector ($selected) {
-	$one_panel=$two_panel=$three_panel=$four_panel="panel panel-success flex-item";
-	if ($selected=="print") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="online") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="series") {$three_panel="panel panel-warning flex-item";}
-	if ($selected=="large") {$four_panel="panel panel-warning flex-item";}
+function interact_classselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="discuss") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="personal") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="shared") {$three_panel="panel panel-success flex-item";}
 
 ?>
 				<div class="flex-container">
-				<a href="trans_static_print.php" class="<?php echo $one_panel?>">
+				<a href="interact_class_discuss.php" class="<?php echo $one_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>As a printable page</h4>
+						<h4>Debate and Discuss</h4>
 					</div>
 				</a>
-				<a href="trans_static_online.php" class="<?php echo $two_panel?>">
+				<a href="interact_class_personal.php" class="<?php echo $two_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Viewable online within the VLE</h4>
+						<h4>Personal Writing</h4>
 					</div>
 				</a>
-				<a href="trans_static_series.php" class="<?php echo $three_panel?>">
+				<a href="interact_class_shared.php" class="<?php echo $three_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>As a series of pages</h4>
+						<h4>Shared, multiple authors</h4>
 					</div>
 				</a>
-				<a href="trans_static_large.php" class="<?php echo $four_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>A large amount</h4>
-					</div>
-				</a>
-
 			</div>
 <?php
 }
 
+function interact_class_whenselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="now") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="timed") {$two_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="interact_class_discuss_synch.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Here and Now</h4>
+					</div>
+				</a>
+				<a href="interact_class_discuss_asynch.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Over Time</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+function interact_groupselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="discuss") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="personal") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="shared") {$three_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="interact_group_discuss.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Debate and Discuss</h4>
+					</div>
+				</a>
+				<a href="interact_group_personal.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Personal Writing</h4>
+					</div>
+				</a>
+				<a href="interact_group_shared.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Shared, multiple authors</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function interact_group_whenselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="now") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="timed") {$two_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="interact_group_discuss_synch.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Here and Now</h4>
+					</div>
+				</a>
+				<a href="interact_group_discuss_asynch.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Over Time</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function interact_one2oneselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="now") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="timed") {$two_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="interact_one2one_synch.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Here and Now</h4>
+					</div>
+				</a>
+				<a href="interact_one2one_asynch.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Over Time</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function interact_one2one_timed_whoselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="peer") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="student") {$two_panel="panel panel-success flex-item";}
+
+?>
+			<div class="flex-container">
+				<a href="interact_one2one_asynch_peer.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Peer-Peer (Anyone)</h4>
+					</div>
+				</a>
+				<a href="interact_one2one_asynch_student.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Student-Tutor</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function interact_one2one_timed_studentselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="communicate") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="question") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="reflect") {$three_panel="panel panel-success flex-item";}
+
+?>
+			<div class="flex-container">
+				<a href="interact_one2one_asynch_student_communicate.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Send information</h4>
+					</div>
+				</a>
+				<a href="interact_one2one_asynch_student_question.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Ask Question</h4>
+					</div>
+				</a>
+				<a href="interact_one2one_asynch_student_reflect.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Individual reflections</h4>
+					</div>
+				</a>
+
+			</div>
+<?php
+}
+
+/* Functions for the Communicating/Transfer Information section of the decision tree
+ * ------------------------------------------------------------------------------
+ */
+function communicateselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="single") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="grouped") {$two_panel="panel panel-success flex-item";}
+?>
+				<div class="flex-container">
+				<a href="communicate_single.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Single item (at a time)</h4>
+					</div>
+				</a>
+				<a href="communicate_groupof.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Organised grouping of items</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_groupedselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="content") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="mixed") {$two_panel="panel panel-success flex-item";}
+?>
+				<div class="flex-container">
+				<a href="communicate_groupof_content.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Collection of content pages</h4>
+					</div>
+				</a>
+				<a href="communicate_groupof_mixed.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Mixed resources/activities</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+function communicate_singleselector ($selected) {
+	$one_panel=$two_panel=$three_panel=$four_panel=$five_panel="panel panel-warning flex-item";
+	if ($selected=="navigation") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="hyperlink") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="document") {$three_panel="panel panel-success flex-item";}
+	if ($selected=="item") {$four_panel="panel panel-success flex-item";}
+	if ($selected=="multimedia") {$five_panel="panel panel-success flex-item";}
+?>
+				<div class="flex-container">
+				<a href="communicate_single_navigation.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Through Navigation Menu</h4>
+					</div>
+				</a>
+				<a href="communicate_single_hyperlink.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Hyperlink</h4>
+					</div>
+				</a>
+				<a href="communicate_single_document.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Document or File</h4>
+					</div>
+				</a>
+				<a href="communicate_single_item.php" class="<?php echo $four_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Item on the module page</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia.php" class="<?php echo $five_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Multimedia</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_itemselector($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="page") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="book") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="content") {$three_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="communicate_single_item_page.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Single blank page</h4>
+					</div>
+				</a>
+				<a href="communicate_single_item_book.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Series of pages</h4>
+					</div>
+				</a>
+				<a href="communicate_single_item_content.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Directly on Module page</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_hyperlinkselector($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="courselink") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="weblink") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="content") {$three_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="communicate_single_hyperlink_courselink.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Within the module</h4>
+					</div>
+				</a>
+				<a href="communicate_single_hyperlink_weblink.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>An external webpage</h4>
+					</div>
+				</a>
+				<a href="communicate_single_hyperlink_withincontent.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Embedded within page content</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_hyperlink_contentselector($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="page") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="book") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="content") {$three_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="communicate_single_hyperlink_withcontent_page.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Single blank page</h4>
+					</div>
+				</a>
+				<a href="communicate_single_hyperlink_withcontent_book.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Series of pages</h4>
+					</div>
+				</a>
+				<a href="communicate_single_hyperlink_withcontent_content.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Directly on Module page</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_multimediaselector($selected) {
+	$one_panel=$two_panel=$three_panel=$four_panel="panel panel-warning flex-item";
+	if ($selected=="audio") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="image") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="video") {$three_panel="panel panel-success flex-item";}
+	if ($selected=="capture") {$three_panel="panel panel-success flex-item";}
+?>
+			<div class="flex-container">
+				<a href="communicate_single_multimedia_audio.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Audio</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_image.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Still Image</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_video.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Pre-recorded Video</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_capture.php" class="<?php echo $four_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Lecture/Session recording</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_multimedia_imageselector($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="page") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="file") {$two_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="communicate_single_multimedia_image_page.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Embedded on the page</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_image_file.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Downloadable file</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_multimedia_image_pageselector($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="page") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="book") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="content") {$three_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="communicate_single_multimedia_image_page_page.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Single blank page</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_image_page_book.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Series of pages</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_image_page_content.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Directly on Module page</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function communicate_single_multimedia_captureselector($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="webconference") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="lecture") {$two_panel="panel panel-success flex-item";}
+
+?>
+				<div class="flex-container">
+				<a href="communicate_single_multimedia_capture_webconference.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>A web-conference session</h4>
+					</div>
+				</a>
+				<a href="communicate_single_multimedia_capture_lecture.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>A lecture/presentation</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+/* Functions for the CoCreation section of the decision tree
+ * ------------------------------------------------------------------------------
+ */
+function cocreateselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="multiple") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="everyone") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="individual") {$three_panel="panel panel-success flex-item";}
+?>
+				<div class="flex-container">
+				<a href="cocreate_multiple.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Multiple Authors</h4>
+					</div>
+				</a>
+				<a href="cocreate_everyone.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Sharing information from everyone</h4>
+					</div>
+				</a>
+				<a href="cocreate_individual.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Curate individual works</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+/* Functions for the Assessment section of the decision tree
+ * ------------------------------------------------------------------------------
+ */
 function assessselector ($selected) {
-	$one_panel=$two_panel=$three_panel=$four_panel=$five_panel="panel panel-success flex-item";
-	if ($selected=="test") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="offline") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="understand") {$three_panel="panel panel-warning flex-item";}
-	if ($selected=="self") {$four_panel="panel panel-warning flex-item";}
-	if ($selected=="group") {$four_panel="panel panel-warning flex-item";}
+	$one_panel=$two_panel=$three_panel=$four_panel=$five_panel="panel panel-warning flex-item";
+	if ($selected=="test") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="offline") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="understand") {$three_panel="panel panel-success flex-item";}
+	if ($selected=="self") {$four_panel="panel panel-success flex-item";}
+	if ($selected=="group") {$four_panel="panel panel-success flex-item";}
 
 ?>
 				<div class="flex-container">
@@ -265,9 +653,9 @@ function assessselector ($selected) {
 <?php
 }
 function assess_testselector ($selected) {
-	$one_panel=$two_panel="panel panel-success flex-item";
-	if ($selected=="quick") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="depth") {$two_panel="panel panel-warning flex-item";}
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="quick") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="depth") {$two_panel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
 				<a href="assess_test_quick.php" class="<?php echo $one_panel?>">
@@ -284,9 +672,9 @@ function assess_testselector ($selected) {
 <?php
 }
 function assess_groupselector ($selected) {
-	$one_panel=$two_panel="panel panel-success flex-item";
-	if ($selected=="collaborative") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="discussion") {$two_panel="panel panel-warning flex-item";}
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="collaborative") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="discussion") {$two_panel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
 				<a href="assess_group_collaborative.php" class="<?php echo $one_panel?>">
@@ -303,9 +691,9 @@ function assess_groupselector ($selected) {
 <?php
 }
 function assess_group_discussionselector ($selected) {
-	$one_panel=$two_panel="panel panel-success flex-item";
-	if ($selected=="synch") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="asynch") {$two_panel="panel panel-warning flex-item";}
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="synch") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="asynch") {$two_panel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
 				<a href="assess_group_discussion_synch.php" class="<?php echo $one_panel?>">
@@ -323,10 +711,10 @@ function assess_group_discussionselector ($selected) {
 }
 
 function assess_selfselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-success flex-item";
-	if ($selected=="repeat") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="peer") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="reflect") {$three_panel="panel panel-warning flex-item";}
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="repeat") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="peer") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="reflect") {$three_panel="panel panel-success flex-item";}
 ?>
 				<div class="flex-container">
 				<a href="assess_self_repeat.php" class="<?php echo $one_panel?>">
@@ -348,95 +736,4 @@ function assess_selfselector ($selected) {
 			</div>
 <?php
 }
-
-function interactselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-success flex-item";
-	if ($selected=="qa") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="group") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="cohort") {$three_panel="panel panel-warning flex-item";}
-?>
-				<div class="flex-container">
-				<a href="interact_qa.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Q&A Sessions</h4>
-					</div>
-				</a>
-				<a href="interact_group.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Groups</h4>
-					</div>
-				</a>
-				<a href="interact_cohort.php" class="<?php echo $three_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Whole cohort</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-function interact_groupselector ($selected) {
-	$one_panel=$two_panel="panel panel-success flex-item";
-	if ($selected=="small") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="large") {$two_panel="panel panel-warning flex-item";}
-?>
-				<div class="flex-container">
-				<a href="interact_group_small.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Small</h4>
-					</div>
-				</a>
-				<a href="interact_group_large.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Large</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-function interact_group_smallselector ($selected) {
-	$one_panel=$two_panel="panel panel-success flex-item";
-	if ($selected=="synch") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="asynch") {$two_panel="panel panel-warning flex-item";}
-?>
-				<div class="flex-container">
-				<a href="interact_group_small_synch.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Synchronous</h4>
-					</div>
-				</a>
-				<a href="interact_group_small_asynch.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Asynchronous</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-
-function cocreateselector ($selected) {
-	$one_panel=$two_panel=$three_panel="panel panel-success flex-item";
-	if ($selected=="multiple") {$one_panel="panel panel-warning flex-item";}
-	if ($selected=="everyone") {$two_panel="panel panel-warning flex-item";}
-	if ($selected=="individual") {$three_panel="panel panel-warning flex-item";}
-?>
-				<div class="flex-container">
-				<a href="cocreate_multiple.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Multiple Authors</h4>
-					</div>
-				</a>
-				<a href="cocreate_everyone.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Sharing information from everyone</h4>
-					</div>
-				</a>
-				<a href="cocreate_individual.php" class="<?php echo $three_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Curate individual works</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-
 ?>
