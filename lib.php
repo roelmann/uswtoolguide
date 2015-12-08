@@ -88,7 +88,8 @@ function tooldetail ($name, $additional) {
 }
 
 function tooldetailprintlist ($name, $additional) {
-	$filename='tools/'.$name.'.php';
+//	$filename='tools/'.$name.'.php';
+    $filename = $name;
 ?>
 	<div class="main-container">
 
