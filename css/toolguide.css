@@ -288,3 +288,17 @@ button.panel.flexrowheader {
 		flex-direction: column;
     }
 }
+@media print {
+	.printfull h2,
+	.printfull h4 {
+		display:none;
+	}
+}
+.headerbuttons {
+	float:right;
+	width:300px;
+}
+.headerbuttons a {
+	float:right;
+	margin:5px;
+}

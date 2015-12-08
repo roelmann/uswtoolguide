@@ -1,4 +1,5 @@
 <div class="footer">
+	<a name="footer"></a>
 	<div class="row flex-container">
 		<div class="key flex-container flex-item">
 			<div class="flex-item flex-container panel panel-success">
