@@ -2,7 +2,7 @@
 			<?php
 			//Tool name
 			$name='title';
-			$title='<h3>Pedagogy<i class="fa fa-arrow-right fa-2x" style="float:right;"></i></h3><p style="text-align:left;">What do you want to achieve?</p><p><br /></p><h3>Technology<i class="fa fa-arrow-down fa-2x"></i></h3><p style="text-align:right;">What do you want to use?</p>';
+			$title='<i class="fa fa-arrow-right fa-2x" style="float:right;"></i><p style="text-align:right;">What do you want to achieve?  </p><p><br /></p><i class="fa fa-arrow-down fa-2x"></i><p style="text-align:left;">  What do you want to use?</p>';
 			$text='';
 			$software='';
 

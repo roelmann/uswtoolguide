@@ -10,7 +10,14 @@
 	clear:both;
 }
 .selector-main-content .flex-container {
-	margin-bottom:20px;
+    padding-bottom:20px;
+}
+.selector-main-content .flexarrow {
+    border-top:1px solid #dff0d8;
+	width:100%; margin: 0 auto;
+	text-align:center;
+    margin-bottom:20px;
+    color: #3c763d;
 }
 .selector-main-content .flex-item {
     -webkit-flex: 1 1 20%;

@@ -1,10 +1,22 @@
 <div class="footer">
+	<a name="footer"></a>
 	<div class="row flex-container">
 		<div class="using flex-item panel panel-default">
 			<div class="panel-body">
 				<h3>How to use this guide</h3>
-				<p>This selector is a branching database, or decision tree, of the core tools within Moodle. Follow your selections through the process for a recommendation of the most appropriate tool for the task you have in mind.</p>
-				<p>For example: You want to share information asynchronously with groups of your students, and you want them to be able to respond and comment on your message and each other's follow up comments.</br>You would follow through - Communicate and Interact > Groups > Small > Asynchronous <span style="color:green">Check example fits with tree diagram - dont have it with me as Im writing this!</span></p>
+				<p>This selector is a branching database, or decision tree, of the core tools within UniLearn. Follow your selections through the process for a recommendation of the most appropriate tool for the task you have in mind.</p>
+				<p>For example: You want to a students to work together in groups to create some shared content...<br></p>
+				<p class="row flex-container"><span class="flex-item panel panel-warning panel-heading">Communicate Information</span><span class="flex-item panel panel-warning panel-heading">Assessments</span><span class="flex-item panel panel-warning panel-heading">Peer/Student/Tutor interactions</span><span class="flex-item panel panel-warning panel-heading">Co-Create content</span></p>
+				<p>Clicking Co-Create Content would give...</p>
+				<p class="row flex-container"><span class="flex-item panel panel-warning panel-heading">Communicate Information</span><span class="flex-item panel panel-warning panel-heading">Assessments</span><span class="flex-item panel panel-warning panel-heading">Peer/Student/Tutor interactions</span><span class="flex-item panel panel-success panel-heading">Co-Create content</span></p>
+				<p class="row flex-container"><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span><span class="flex-item panel panel-warning panel-heading">Single Document</span><span class="flex-item panel panel-warning panel-heading">Discussion</span><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span></p>
+				<p>Clicking Discussion would then give...</p>
+				<p class="row flex-container"><span class="flex-item panel panel-warning panel-heading">Communicate Information</span><span class="flex-item panel panel-warning panel-heading">Assessments</span><span class="flex-item panel panel-warning panel-heading">Peer/Student/Tutor interactions</span><span class="flex-item panel panel-success panel-heading">Co-Create content</span></p>
+				<p class="row flex-container"><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span><span class="flex-item panel panel-warning panel-heading">Single Document</span><span class="flex-item panel panel-success panel-heading">Discussion</span><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span></p>
+				<p class="row flex-container"><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span><span class="flex-item panel panel-warning panel-heading">1 Author, multiple responses</span><span class="flex-item panel panel-warning panel-heading">Many authors</span><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span></p>
+				<p>In this way you can follow each branch through until the recommended tool is shown on the page, with the green shaded panels providing a 'breadcrumb trail' of your choices.<br>At any point you can go back to any step by simply clicking the relevant choice - in the above example you could return to the Co-Create options by clicking 'Co-Create Content' and this would return to...</p>
+				<p class="row flex-container"><span class="flex-item panel panel-warning panel-heading">Communicate Information</span><span class="flex-item panel panel-warning panel-heading">Assessments</span><span class="flex-item panel panel-warning panel-heading">Peer/Student/Tutor interactions</span><span class="flex-item panel panel-success panel-heading">Co-Create content</span></p>
+				<p class="row flex-container"><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span><span class="flex-item panel panel-warning panel-heading">Single Document</span><span class="flex-item panel panel-warning panel-heading">Discussion</span><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span></p>
 			</div>
 		</div><!-- using -->
 		<div class="more flex-item panel panel-default">

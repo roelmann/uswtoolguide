@@ -20,22 +20,18 @@
 					<p>This is not the best tool for <strong>this job</strong>. It may be ideal for others!</p>
 				</div>
 			</div>
+			<a class = "btn btn-success btn-lg flex-item" style="margin-top:15px;" href="#header"><span class="fa fa-arrow-up">&nbsp;</span>Top of Page</a>
+
 		</div><!-- key -->
 		<div class="using flex-item panel panel-default">
 			<div class="panel-body">
 				<h3>How to use this guide</h3>
 				<ul>
-					<li><strong>Are you a tutor new to Moodle? </strong>Use this guide to help pick the right tool for the job.</li>
+					<li><strong>Are you a tutor new to UniLearn? </strong>Use this guide to help pick the right tool for the job.</li>
 					<li><strong>Know what you want to achieve? </strong>Select the column and follow down to see which are the best tools to help you do it.</li>
 					<li><strong>Want to know the strengths of a specific tool? </strong>Follow its row across the guide to see what that tool is suited for, or not.</li>
 				</ul>
 				<p>You can click on the tool title for more information and help links about each tool. You can also click the icon in each panel for a pop up of the description of the panel - useful on small screens when the responsive nature of the page only shows the icon in each panel.</p>
-				<h3>Need more Moodle help</h3>
-				<ul>
-					<li>Community Forums at http://www.moodle.org</li>
-					<li>Documentation at http://docs.moodle.org</li>
-					<li>Follow #moodle on Twitter!</li>
-				</ul>
 
 			</div>
 		</div><!-- using -->

@@ -14,6 +14,17 @@ require ('lib.php');
 	<div class="main-content">
 		<div class="row clearfix flex-container">
 			<div class="panel panel-success flex-item">
+				<a href="toolindex.php" alt="Link to ToolIndex">
+					<div class="panel-heading">
+						<h3><i class="fa fa-map-o"></i>Tool index</h3>
+					</div>
+				</a>
+				<div class="panel-body">
+					<h4>View a simple index of the tools</h4>
+				</div>
+			</div>
+
+			<div class="panel panel-success flex-item">
 				<a href="toolguide.php" alt="Link to ToolGuide">
 					<div class="panel-heading">
 						<h3><i class="fa fa-map-o"></i>Tool Guide</h3>
@@ -34,6 +45,16 @@ require ('lib.php');
 				</div>
 			</div>
 		</div><!-- Row -->
+		<div class="well">
+			<p>This Tool Guide and Tool Selector is designed to help tutors to make use of the tools within UniLearn to enhance their teaching and learning. It is split into 3 elements:</p>
+			<ul>
+				<li><strong>A simple index</strong> - this is a straightforward list of tools, which are clickable links to the detail provided by the larger guide table. It is an easy to follow alphabetical list - but the detail is not shown until you click the links.</li>
+				<li><strong>A full Tool Guide</strong> - this is a large table which shows the outline information for each tool and identifies areas where it is strongest and most appropriate for use. Each tool can be clicked on for additional information and links to TEACH and other resources.</li>
+				<li><strong>A Tool Selector</strong> - This is a 'branching database' or 'decision tree' which can be used to help select the most appropriate tool for a given purpose. Simply choose an option from each step to find a recommended tool for your purpose.</li>
+			</ul>
+			<p>Each page has links to easily switch between these options, while clicking the USW logo will return you to this home page.<br>There is also an option to print the full tool guide - this will take you to a printable page where you can use your browser print button (or menu option) to send the whole document (around 30 pages) or individual pages to your printer. These printable pages will also include the additional information detail available from the links in the Tool Guide.</p>
+		</div>
+
 	</div><!-- Main-Content -->
 	
 	<div class="footer">

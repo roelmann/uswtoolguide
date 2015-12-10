@@ -5,13 +5,10 @@ require ('lib.php');
 ?>
 
 <body role="document">
-<div class="main-container toolguide">
+<div class="main-container toolindex">
     <?php require ('includes/header.php'); ?>
 
         <div class="main-content">
-            <div class="maintitlerow">
-                <?php require ('tools/title.php'); ?>
-            </div>
 
             <?php // Display all tools in alphabetical order - if a file exists print it!
             $files = array();
@@ -21,7 +18,21 @@ require ('lib.php');
             usort($files, strcasecmp);
             foreach ($files as $filename) {
                 if ($filename != 'tools/title.php') {
-                    require ($filename);
+					$toolname = substr ($filename, 6, strlen($filename)-10);
+					?>
+					<div style="display:none; visibility:hidden">
+						<?php require($filename)?>
+					</div>
+					<form class="" action="detail.php" method="post" >
+						<input type="hidden" name="tooltype" value="<?php echo $toolname;?>" >
+
+						<button type="submit" class="panel panel-info row-header">
+						<div class="panel-heading flexpanelheading">
+							<h3 class="panel-title"><?php echo $title;?></h3>
+						</div>
+						</button>
+					</form>
+					<?php
                 }
             }
             ?>
