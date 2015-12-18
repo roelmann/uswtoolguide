@@ -3,22 +3,22 @@
 			//Tool name
 			$name='chat';
 			$title='Chat (text based)';
-			$text='Hold real-time text based chat discussions with the class';
+			$text='Hold real-time text based chat discussions with the class.';
 			$software='Collaborate';
 
 			// Ease of Use
 			$styleEU='warning';
-			$textEU='Quite easy to set up. Requires some planning to manage and moderate';
+			$textEU='Quite easy to set up. Requires some planning to manage and moderate.';
 			// Information Transfer
 			$styleIT='warning';
-			$textIT='Maybe. Use for invited speakers. High speed message volume. Risks of non-interaction';
+			$textIT='Maybe. Use for invited speakers. Consider the management of the potential high volume of messaging and the risk of some users not interacting.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Maybe. Chats are versatile and can be used in formative assessment activities if planned well.
+			$textAL='Maybe. Chats are versatile and can be used in formative assessment activities if planned appropriately.
 ';
 			// Communication & Interaction
 			$styleCI='success';
-			$textCI='Yes. Hold debates, small group review sessions, drop-in and Q&A sessions';
+			$textCI='Yes. Hold debates, small group review sessions, drop-in and Q&A sessions.';
 			// Co-Creation of Content
 			$styleCC='success';
 			$textCC='Yes. Students can collaborate and explore topics, discuss them and write together.';

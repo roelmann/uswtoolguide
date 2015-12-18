@@ -11,16 +11,16 @@
 			$textEU="Easy. It's just like a standard forum and is already set up in your module";
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. include course updates, encouragement, timely links, etc.';
+			$textIT='Yes. Include course updates, encouragement, timely links, etc.';
 			// Assess Learning
 			$styleAL='danger';
 			$textAL='No. Announcements are limited in that students cannot post back or start new topics.';
 			// Communication & Interaction
 			$styleCI='danger';
-			$textCI='No. Announcements are limited in that students cannot post back or start new topics. They are a push tool.';
+			$textCI="No. Announcements are limited in that students cannot post back or start new topics. They are a 'push' tool.";
 			// Co-Creation of Content
 			$styleCC='danger';
-			$textCC='No. Announcements are limited in that students cannot post back or start new topics. They are a push tool.';
+			$textCC="No. Announcements are limited in that students cannot post back or start new topics. They are a 'push' tool.";
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is not a learning activity, but information transfer.';

@@ -1,29 +1,29 @@
 		<div class="row clearfix flex-container">
 			<?php
 			//Tool name
-			$name='video';
-			$title='Video';
-			$text='Embed videos directly on the module page, or anywhere in content created';
-			$software='Blackboard';
+			$name="video";
+			$title="Video";
+			$text="Embed videos directly on the module page, or anywhere in content created.";
+			$software="Blackboard";
 
 			// Ease of Use
-			$styleEU='success';
-			$textEU='Easy to add videos as either standalone videos or as embedded in a content item.';
+			$styleEU="success";
+			$textEU="Easy to add videos as either standalone videos or as embedded in a content item.";
 			// Information Transfer
-			$styleIT='success';
-			$textIT='Yes. Only tutors can add videos onto module pages so primarily a "push" tool.';
+			$styleIT="success";
+			$textIT="Yes. Only tutors can add videos onto module pages so primarily a 'push' tool.";
 			// Assess Learning
-			$styleAL='warning';
-			$textAL='Maybe. Videos are a "push" tool to display on the module page. However, all users can add videos into fourm posts, blogs, or assignment submissions';
+			$styleAL="warning";
+			$textAL="Maybe. Videos are a 'push' tool to display on the module page. However, all users can add videos into fourm posts, blogs, or assignment submissions";
 			// Communication & Interaction
-			$styleCI='warning';
-			$textCI='Maybe. Videos are a "push" tool to display on the module page. However, users can work collaboratively to create videos before they are added to the module through blogs or forum posts etc.';
+			$styleCI="warning";
+			$textCI="Maybe. Videos are a 'push' tool to display on the module page. However, users can work collaboratively to create videos before they are added to the module through blogs or forum posts etc.";
 			// Co-Creation of Content
-			$styleCC='warning';
-			$textCC='Maybe. Videos are a "push" tool to display on the module page. However, users can work collaboratively to create videos before they are added to the module through blogs or forum posts etc.';
+			$styleCC="warning";
+			$textCC="Maybe. Videos are a 'push' tool to display on the module page. However, users can work collaboratively to create videos before they are added to the module through blogs or forum posts etc.";
 			// Blooms
-			$styleB='danger';
-			$textB='None. This is information transfer and not a learning activity.';
+			$styleB="danger";
+			$textB="None. This is primarily an information transfer tool and not a learning activity.";
 
 			// Additional info
 			$additional="<h3>Embedded Video</h3>

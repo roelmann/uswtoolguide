@@ -47,7 +47,7 @@ function toolname ($name, $title, $text, $software, $additional) {
 
 function toolnamewhenprinting ($name, $title, $text, $software, $additional) {
 ?>
-		<form class="flex-item row-header flexrowheader" action="detail.php" method="post" >
+		<form class="flex-item row-header flexrowheader" action="#" method="post" >
 			<input type="hidden" name="tooltype" value="<?php echo $name;?>" >
 			<input type="hidden" name="additional" value="<?php echo $additional;?>" > 
 
@@ -119,7 +119,11 @@ function selectortooldetail ($name, $additional) {
 		<div class="main-content detail">
 			<i class="fa fa-2x fa-check-square-o"></i><span style="font-size:150%;">  The recommended tool is...</span>
 			<p><br /></p>
-			<?php require ($filename); ?>
+			
+			<?php
+				$printing=1;
+				require ($filename);
+			?>
 
 			<div class='additional panel panel-info'>
 				<div class="panel-body">
@@ -496,7 +500,7 @@ function communicate_single_itemselector($selected) {
 
 function communicate_single_hyperlinkselector($selected) {
 	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
-	if ($selected=="courselink") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="course") {$one_panel="panel panel-success flex-item";}
 	if ($selected=="weblink") {$two_panel="panel panel-success flex-item";}
 	if ($selected=="content") {$three_panel="panel panel-success flex-item";}
 ?>
@@ -789,6 +793,7 @@ function assess_practicalselector ($selected) {
 			</div>
 <?php
 }
+
 function assess_communicationselector ($selected) {
 	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
 	if ($selected=="discuss") {$one_panel="panel panel-success flex-item";}
@@ -840,5 +845,214 @@ function assess_communication_whenselector ($selected) {
 			</div>
 <?php
 }
- 
+
+function assess_fileselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="single") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="multiple") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_file_single.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Single File</h4>
+					</div>
+				</a>
+				<a href="assess_file_multiple.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Multiple files</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function assess_file_singleselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="originality") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="nooriginality") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_file_single_originality.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>With originality reporting</h4>
+					</div>
+				</a>
+				<a href="assess_file_single_nooriginality.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>No originality reporting needed</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function assess_file_single_originalityselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="tutor") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="peer") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_file_single_originality_tutor.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Tutor marked</h4>
+					</div>
+				</a>
+				<a href="assess_file_single_originality_peer.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Peer marked</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+
+function assess_file_multipleselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="onetime") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="overtime") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_file_multiple_onetime.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Submitting at one time</h4>
+					</div>
+				</a>
+				<a href="assess_file_multiple_overtime.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Collecting over time</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function assess_presentationselector ($selected) {
+	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
+	if ($selected=="recording") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="offline") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="file") {$three_panel="panel panel-success flex-item";}
+
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_presentation_recording.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Record a presentation</h4>
+					</div>
+				</a>
+				<a href="assess_presentation_offline.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Presentation with no electronic submission</h4>
+					</div>
+				</a>
+				<a href="assess_presentation_file.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Presentation with a file submission</h4>
+					</div>
+				</a>
+
+			</div>
+<?php
+}
+
+
+function assess_presentation_fileselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="single") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="multiple") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_presentation_file_single.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Single File</h4>
+					</div>
+				</a>
+				<a href="assess_presentation_file_multiple.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Multiple files</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function assess_presentation_file_singleselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="originality") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="nooriginality") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_presentation_file_single_originality.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>With originality reporting</h4>
+					</div>
+				</a>
+				<a href="assess_presentation_file_single_nooriginality.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>No originality reporting needed</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+function assess_presentation_file_single_originalityselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="tutor") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="peer") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_presentation_file_single_originality_tutor.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Tutor marked</h4>
+					</div>
+				</a>
+				<a href="assess_presentation_file_single_originality_peer.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Peer marked</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
+
+function assess_presentation_file_multipleselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="onetime") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="overtime") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_presentation_file_multiple_onetime.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Submitting at one time</h4>
+					</div>
+				</a>
+				<a href="assess_presentation_file_multiple_overtime.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Collecting over time</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+
 ?>

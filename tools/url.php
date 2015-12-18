@@ -8,10 +8,10 @@
 
 			// Ease of Use
 			$styleEU='success';
-			$textEU='Easy - find the web address (the bit that starts <em>http</em>, copy it and paste it.';
+			$textEU='Easy - find the web address (the bit that starts <em>http</em>), copy it and paste it.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Very easy way to direct students to information on other websites';
+			$textIT='Very easy way to direct students to information on other websites.';
 			// Assess Learning
 			$styleAL='danger';
 			$textAL='Not directly. Could link students to external assesable activities such as portfolios or blogs.';

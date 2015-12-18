@@ -2,19 +2,19 @@
 			<?php
 			//Tool name
 			$name='quiz';
-			$title='Quizzes and Tests';
+			$title='Quizzes, Surveys and Tests';
 			$text='Use to assess learning, whether formative or summative.';
 			$software='Blackboard';
 
 			// Ease of Use
 			$styleEU='danger';
-			$textEU='No. Takes time to set up well. Configure the general settings and then add questions.';
+			$textEU='No. Takes time to set up well. Configure the general settings and then add questions. Particular attention should be paid to writing good quality questions.';
 			// Information Transfer
 			$styleIT='danger';
-			$textIT='No. Quizes are aimed at assessment not as a distribution channel.';
+			$textIT='No. Quizzes are aimed at assessment not as a distribution channel.';
 			// Assess Learning
 			$styleAL='success';
-			$textAL='Yes. Quiz can be timed and secure and has a variety of question types which can be used for assessing.';
+			$textAL='Yes. Quizzes can be timed and secure and has a variety of question types which can be used for assessing.';
 			// Communication & Interaction
 			$styleCI='danger';
 			$textCI='No. Tip - use forums instead.';

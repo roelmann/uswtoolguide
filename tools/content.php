@@ -11,16 +11,16 @@
 			$textEU='Easy. Create the content using the HTML editor, adding multimedia if needed.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. Only tutors can create the content, so this is definitely a "push" tool.';
+			$textIT="Yes. Only tutors can create the content, so this is definitely a 'push' tool.";
 			// Assess Learning
 			$styleAL='danger';
 			$textAL='No. Its a distribution tool. Although it can be used to communicate information about assessments which are then collected through a different tool.';
 			// Communication & Interaction
 			$styleCI='warning';
-			$textCI='Maybe. Embed or link to interactive widgets.';
+			$textCI='Maybe. Content items can be used to embed or link to interactive widgets.';
 			// Co-Creation of Content
-			$styleCC='warning';
-			$textCC='Maybe. Use to give a task. Student files can be collected through forums or assignments.';
+			$styleCC='danger';
+			$textCC='No. The content item is created by the tutor and students are not able to edit module content directly.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is not a learning activity, but information transfer.';

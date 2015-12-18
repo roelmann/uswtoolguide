@@ -3,7 +3,7 @@
 			//Tool name
 			$name='blankpage';
 			$title='Blank Page';
-			$text='Create a separate blank content page within your module';
+			$text='Create a separate blank content page within your module.';
 			$software='Blackboard';
 
 			// Ease of Use
@@ -11,16 +11,16 @@
 			$textEU='Easy. Just create the page using the HTML editor, adding multimedia if needed.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. Only tutors can create the pages, so this is definitely a "push" tool.';
+			$textIT="Yes. Only tutors can create the pages, so this is definitely a 'push' tool.";
 			// Assess Learning
-			$styleAL='warning';
-			$textAL='Maybe. Use to give a task. Student files can be collected through forums or assignments.';
+			$styleAL='danger';
+			$textAL='Not directly. Pages can be used to give details of a task with student files collected through forums or assignments.';
 			// Communication & Interaction
-			$styleCI='warning';
-			$textCI='Maybe. Embed or link to interactive widgets.';
+			$styleCI='danger';
+			$textCI='No. The page is created by the tutor and students are not able to edit module content directly.';
 			// Co-Creation of Content
-			$styleCC='warning';
-			$textCC='Maybe. Use to give a task. Student files can be collected through forums or assignments.';
+			$styleCC='danger';
+			$textCC='No. The page is created by the tutor and students are not able to edit module content directly.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is not a learning activity, but information transfer.';

@@ -8,7 +8,7 @@
 
 			// Ease of Use
 			$styleEU='danger';
-			$textEU='No. Takes time to set up well. Configure the general settings and then add questions.';
+			$textEU='No. Takes time to set up well. Configure the general settings and then add questions. Particular attention should be paid to writing good quality questions.';
 			// Information Transfer
 			$styleIT='danger';
 			$textIT='No. Quizes are aimed at assessment not as a distribution channel.';

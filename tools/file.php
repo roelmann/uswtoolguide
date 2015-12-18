@@ -8,19 +8,19 @@
 
 			// Ease of Use
 			$styleEU='success';
-			$textEU='Easy. Like an email attachment, but can your document stand on its own?';
+			$textEU='Easy. Like an email attachment, but can your document stand on its own? Consider adding a content item or description to explain the file where appropriate.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. Only tutors can upload files to modules, so this is definitely a "push" tool.';
+			$textIT="Yes. Only tutors can upload files to modules, so this is definitely a 'push' tool.";
 			// Assess Learning
 			$styleAL='danger';
 			$textAL='No. Its a distribution tool. Although it can be used to communicate information about assessments which are then collected through a different tool.';
 			// Communication & Interaction
 			$styleCI='danger';
-			$textCI='No. Its a distribution tool. No option for interaction or 2-way communication.';
+			$textCI='No. Its a distribution tool. There is no option for interaction or 2-way communication.';
 			// Co-Creation of Content
 			$styleCC='danger';
-			$textCC='No. Its a distribution tool. No option for interaction or 2-way communication.';
+			$textCC='No. Its a distribution tool. There is no option for interaction or 2-way communication.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is not a learning activity, but information transfer.';

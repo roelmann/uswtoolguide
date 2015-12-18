@@ -8,7 +8,7 @@
 
 			// Ease of Use
 			$styleEU='warning';
-			$textEU='Not difficult but requires some preparation and planning. Requires some initial setup and additional equipment (microphone and camera)';
+			$textEU='Not difficult but requires some preparation and planning. Requires some initial setup and additional equipment (microphone and camera).';
 			// Information Transfer
 			$styleIT='success';
 			$textIT='Yes. Provide lecture or seminar recordings for a variety of purposes.';

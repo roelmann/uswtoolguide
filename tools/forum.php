@@ -2,7 +2,7 @@
 			<?php
 			//Tool name
 			$name='forum';
-			$title='Discussion Forum';
+			$title='Forums/ Discussions';
 			$text='Can be used for many types of learning activities and interactions.';
 			$software='Blackboard';
 
@@ -11,16 +11,16 @@
 			$textEU='Easy. Discussions have usable default settings. A name & description is usually enough.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Share resources as links or files. Caution over high message volume and risk of losing info.';
+			$textIT='Share resources as links or files. Consider the ongoing moderation and management of discussion forums.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL="Discussions are versatile & allow this with some learning design. They link seemlessly with Blackboard's gradecentre";
+			$textAL="Discussions are versatile and do allow this with some learning design, although careful consideration of forum moderation and management is required. They link seemlessly with Blackboard's gradecentre.";
 			// Communication & Interaction
 			$styleCI='success';
-			$textCI='Yes. Students communicate with you & peers. They can interact as a class or in groups.';
+			$textCI='Yes. Students communicate with you and peers. They can interact as a class or in groups.';
 			// Co-Creation of Content
 			$styleCC='success';
-			$textCC='Yes. Students can collaborate & explore topics, discuss them & write together.';
+			$textCC='Yes. Students can collaborate and explore topics, discuss them and write together.';
 			// Blooms
 			$styleB='success';
 			$textB='5/6 <br />Understand, Apply, Analyse, Evaluate, Create';

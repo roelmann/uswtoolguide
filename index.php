@@ -12,6 +12,10 @@ require ('lib.php');
 		<p><br></p><p><br></p>
 		<h2>Tool Guide and Tool Selector</h2>
 	</header>
+<div class="panel panel-danger panel-heading">
+    <p><strong>Note to self/Unilearn team: </strong> TODO:<br>Tool content for - Course Link, Emails, Journals, PeerMark, Portfolios<br>TEACH content - review or create holding pages for - Blog, Wiki, Journal, Portfolio, Glossary</p>
+</div>
+    <p><br></p>
 
 	<div class="main-content">
 		<div class="row clearfix flex-container">

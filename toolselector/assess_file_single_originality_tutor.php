@@ -11,11 +11,13 @@ require ('../lib.php');
 		<div class="selector-main-content">
 			
 			<?php
-				firstselector("transfer");
-				communicateselector("single");
-				communicate_singleselector("hyperlink");
-				communicate_single_hyperlinkselector("weblink");
-				selectortooldetail("url","");
+				firstselector("assess");
+				assessselector("file");
+				assess_fileselector("single");
+				assess_file_singleselector("originality");
+				assess_file_single_originalityselector("tutor");
+				selectortooldetail("turnitin","");
+
 			?>
 			
 			

@@ -14,16 +14,16 @@
 			$textIT='Use a glossary to define terms or present information in categories.';
 			// Assess Learning
 			$styleAL='danger';
-			$textAL='Glossaries in Blackboard are a push tool to present information.';
+			$textAL="Glossaries in Blackboard are a 'push' tool to present information.";
 			// Communication & Interaction
 			$styleCI='danger';
-			$textCI='Glossaries in Blackboard are a push tool to present information';
+			$textCI="Glossaries in Blackboard are a 'push' tool to present information.";
 			// Co-Creation of Content
 			$styleCC='danger';
-			$textCC='Glossaries in Blackboard are a push tool to present information';
+			$textCC="Glossaries in Blackboard are a 'push' tool to present information.";
 			// Blooms
 			$styleB='danger';
-			$textB='None. Glossaries are an information transfer tool not a learning activity.';
+			$textB='None. Glossaries in Blackboard are an information transfer tool not a learning activity.';
 
 			// Additional info
 			$additional="<h3>".$title."</h3>

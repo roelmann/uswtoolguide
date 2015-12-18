@@ -21,15 +21,15 @@
 ';
 			// Co-Creation of Content
 			$styleCC='warning';
-			$textCC='Maybe. <b>REVIEW - BB/TII/Both</b> Assignments can be submitted in groups in Blackboard (not TurnItIn), although careful planning of the assignment activity is required.';
+			$textCC='Maybe. Assignments can be submitted in groups in Blackboard, although careful planning of the assignment activity is required.';
 			// Blooms
 			$styleB='success';
 			$textB='6/6 Can do all 6 with some planning and creative learning design.';
 
 			// Additional info
 			$additional="<h3>".$title."</h3>
-		<p>Digital technologies are a valuable way of supporting and enhancing how assessment and feedback are delivered. The pages on TEACH contain guides to the different tools available at USW as well as information about the benefits of technology enhanced learning (and the different tools and approaches contained within this). You will also find materials from our Online Assessment and Feedback workshop on the ELTT organisation in Bb http://teach.southwales.ac.uk/assessment/ https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1044599_1</p>
-		<p>Note: As well as Blackboard's own Assignment tool, we support TurnItIn - see the separate tool guide. And assessments can also be carried out using quiz tools, graded forum discussions, blogs or wikis.</p>";
+		<p>Digital technologies are a valuable way of supporting and enhancing how assessment and feedback are delivered. The <a href='http://teach.southwales.ac.uk/assessment/'>pages on TEACH</a> contain guides to the different tools available at USW as well as information about the benefits of technology enhanced learning (and the different tools and approaches contained within this). You will also find materials from our Online Assessment and Feedback workshop on the <a href='https://unilearn.southwales.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_101667_1&content_id=_1044599_1'>Enhancing Learning Through Technology organisation</a> in Blackboard. </p>
+		<p>Note: As well as Blackboard's own Assignment tool, we also support TurnItIn - see the separate tool guide. And assessments can also be carried out using quiz tools, graded forum discussions, blogs or wikis.</p>";
 			// Display panels
 			if(!$printing){
 				toolname($name,$title,$text,$software,$additional);

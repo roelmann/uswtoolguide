@@ -11,23 +11,23 @@
 			$textEU='Quite easy to set up. Requires some planning to manage and moderate. TEACH pages available for support.';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. Collaborate for interaction/collaborate sessions. Use for invited speakers. High speed message volume. Risks of non-interaction.';
+			$textIT='Yes. Use Collaborate for interaction/collaboration sessions and for invited speakers. Consider the management of the potential high volume of messaging and the risk of some users not interacting.';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Maybe. Chats are versatile and can be used in formative assessment activities e.g.Polling activity in Collaborate.';
+			$textAL='Maybe. Online discussions are versatile and can be used in formative assessment activities e.g. Polling activities in Collaborate.';
 			// Communication & Interaction
 			$styleCI='success';
-			$textCI='Yes. Hold debates, small group review sessions, drop-in and Q&A sessions';
+			$textCI='Yes. Hold debates, small group review sessions, drop-in and Q&A sessions.';
 			// Co-Creation of Content
 			$styleCC='success';
-			$textCC='Yes. Students can collaborate and explore topics, discuss them and write together.';
+			$textCC='Yes. Students can collaborate and explore topics, discuss them and write together, or use the built in whiteboard features to share ideas.';
 			// Blooms
 			$styleB='success';
 			$textB='5/6 understand, apply, analyse, evaluate, create';
 
 			// Additional info
 			$additional="<h3>".$title."</h3>
-			<p>http://its.southwales.ac.uk/documents/download/38/  http://teach.southwales.ac.uk/collaborate/</p>";
+			<p>Collaborate is an online virtual classroom/meeting space which allows users to connect via audio, see each other via webcams, use a chat tool, collaborate on documents and view presentations, as well as other features. You can find more about <a href='http://teach.southwales.ac.uk/collaborate/'>Collaborate on the TEACH channel</a>.</p>";
 
 			// Display panels
 			if(!$printing){

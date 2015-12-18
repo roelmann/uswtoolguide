@@ -8,16 +8,16 @@
 
 			// Ease of Use
 			$styleEU='warning';
-			$textEU='Not difficult, but can take some thought to set up well to ensure good engagement';
+			$textEU='Not difficult, but can take some thought to set up well to ensure good engagement.';
 			// Information Transfer
 			$styleIT='warning';
-			$textIT='Maybe. This is primarily a tool for audience engagement and response, although it is usually tied in with presentations or other information transfer tools';
+			$textIT='Maybe. This is primarily a tool for audience engagement and response, although it is usually tied in with presentations or other information transfer tools.';
 			// Assess Learning
 			$styleAL='success';
 			$textAL='Yes. Audience response systems can be used to judge understanding of sessions and discussions.';
 			// Communication & Interaction
 			$styleCI='success';
-			$textCI='Yes. Although communication may be limited according to the responses enabled, it does allow users to interact with the session and the instructor';
+			$textCI='Yes. Although communication may be limited according to the responses enabled, it does allow users to interact with the session and the instructor.';
 			// Co-Creation of Content
 			$styleCC='danger';
 			$textCC='No. Audience responses are not really co-creation, although they may be set up to display charts of responses as part of the presentation being used.';

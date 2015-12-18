@@ -1,33 +1,33 @@
 		<div class="row clearfix flex-container">
 			<?php
 			//Tool name
-			$name='wiki';
-			$title='Wiki';
-			$text='Enables collaborative content creation.';
+			$name='gradecentre';
+			$title='Grade Centre';
+			$text='The grading area of Blackboard.';
 			$software='Blackboard';
 
 			// Ease of Use
-			$styleEU='warning';
-			$textEU='Can be tricky to set up and get best use from wikis - get some training.';
+			$styleEU='success';
+			$textEU='...';
 			// Information Transfer
 			$styleIT='success';
-			$textIT='Yes. Use as an information page. Tutor can control who is able to edit.';
+			$textIT='...';
 			// Assess Learning
 			$styleAL='warning';
-			$textAL='Although not primarily intended for assessment purposes, Wikis are versatile and assessable activities can be planned and designed to use their features.';
+			$textAL='...';
 			// Communication & Interaction
 			$styleCI='warning';
-			$textCI='Not suited for discussions, but ideal for brainstorming, planning and collaborative writing.';
+			$textCI='...';
 			// Co-Creation of Content
-			$styleCC='success';
-			$textCC='Yes. Students can collaborate and explore topics and write together.';
+			$styleCC='warning';
+			$textCC='...';
 			// Blooms
 			$styleB='success';
-			$textB='5/6 understand, apply, analyse, evaluate, create';
+			$textB='...';
 
 			// Additional info
 			$additional="<h3>".$title."</h3>
-			<p>http://teach.southwales.ac.uk/blackboard/communicating_online/</p>";
+			<p>...</p>";
 
 			// Display panels
 			if(!$printing){
