@@ -12,9 +12,10 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("group");
-				assess_groupselector("collabrative");
-				selectortooldetail("wiki","");
+				assessselector("communication");
+				assess_communicationselector("discuss");
+				assess_communication_whenselector("now");
+				selectortooldetail("collaborate","");
 			?>
 			
 			

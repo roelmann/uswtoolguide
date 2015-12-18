@@ -2,7 +2,7 @@
 			<?php
 			//Tool name
 			$name='quiz';
-			$title='Tests';
+			$title='Quizzes and Tests';
 			$text='Use to assess learning, whether formative or summative.';
 			$software='Blackboard';
 

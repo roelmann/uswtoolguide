@@ -12,8 +12,9 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("test");
-				assess_testselector("");
+				assessselector("communication");
+				assess_communicationselector("personal");
+				selectortooldetail("blog","");
 			?>
 			
 			

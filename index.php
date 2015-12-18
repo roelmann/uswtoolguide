@@ -8,7 +8,9 @@ require ('lib.php');
 <div class="main-container indexpage">
 	<header class="page-title">
 		<img src="images/logo.png" alt="Logo" title="Logo">
-		<h1>UniLearn ToolGuide and Tool Selector</h1>
+		<h1>UniLearn Tools</h1>
+		<p><br></p><p><br></p>
+		<h2>Tool Guide and Tool Selector</h2>
 	</header>
 
 	<div class="main-content">

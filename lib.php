@@ -35,7 +35,7 @@ function toolname ($name, $title, $text, $software, $additional) {
 
 			<button type="submit" class="panel panel-info flex-item row-header flexrowheader">
 				<div class="panel-heading flexpanelheading">
-					<h3 class="panel-title"><?php echo $title;?></h3>
+					<h3 class="panel-title"><?php echo $title.'  ';?><span class="fa fa-2x fa-question-circle"></span></h3>
 					<p class="tool-description"><?php echo $text;?></p>
 					<p class="tool-software"><?php echo $software;?></p>
 				</div>
@@ -117,7 +117,7 @@ function selectortooldetail ($name, $additional) {
 	<div class="main-container">
 
 		<div class="main-content detail">
-			<i class="fa fa-2x fa-check-square-o">The recommended tool is...</i>
+			<i class="fa fa-2x fa-check-square-o"></i><span style="font-size:150%;">  The recommended tool is...</span>
 			<p><br /></p>
 			<?php require ($filename); ?>
 
@@ -138,7 +138,6 @@ function selectortooldetail ($name, $additional) {
  */
 function firstselector ($selected) {
 	$transferpanel=$assesspanel=$interactpanel=$cocreatepanel="panel panel-warning flex-item";
-	$assesspanel="panel panel-brand flex-item";
 	if ($selected=="transfer") {$transferpanel="panel panel-success flex-item";}
 	if ($selected=="assess") {$assesspanel="panel panel-success flex-item";}
 	if ($selected=="interact") {$interactpanel="panel panel-success flex-item";}
@@ -200,6 +199,7 @@ function interactselector ($selected) {
 			</div>
 <?php
 }
+
 function interact_classselector ($selected) {
 	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
 	if ($selected=="discuss") {$one_panel="panel panel-success flex-item";}
@@ -656,6 +656,27 @@ function communicate_single_multimedia_captureselector($selected) {
 <?php
 }
 
+function communicate_single_navigationselector($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="button") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="template") {$two_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="communicate_single_navigation_button.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Menu button</h4>
+					</div>
+				</a>
+				<a href="communicate_single_navigation_template.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Standard Module Template items</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
 /* Functions for the CoCreation section of the decision tree
  * ------------------------------------------------------------------------------
  */
@@ -708,142 +729,116 @@ function cocreate_singleselector ($selected) {
  */
 function assessselector ($selected) {
 	$one_panel=$two_panel=$three_panel=$four_panel=$five_panel="panel panel-warning flex-item";
-	if ($selected=="test") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="file") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="exam") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="presentation") {$three_panel="panel panel-success flex-item";}
+	if ($selected=="practical") {$four_panel="panel panel-success flex-item";}
+	if ($selected=="communication") {$five_panel="panel panel-success flex-item";}
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_file.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>File Submission</h4>
+					</div>
+				</a>
+				<a href="assess_exam.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Quiz, Test or Exam</h4>
+					</div>
+				</a>
+				<a href="assess_presentation.php" class="<?php echo $three_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Presentation</h4>
+					</div>
+				</a>
+				<a href="assess_practical.php" class="<?php echo $four_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Practical Assessment</h4>
+					</div>
+				</a>
+				<a href="assess_communication.php" class="<?php echo $five_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Communications</h4>
+					</div>
+				</a>
+
+			</div>
+<?php
+}
+
+function assess_practicalselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="recording") {$one_panel="panel panel-success flex-item";}
 	if ($selected=="offline") {$two_panel="panel panel-success flex-item";}
-	if ($selected=="understand") {$three_panel="panel panel-success flex-item";}
-	if ($selected=="self") {$four_panel="panel panel-success flex-item";}
-	if ($selected=="group") {$four_panel="panel panel-success flex-item";}
-
 ?>
 			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
 
 				<div class="flex-container">
-				<a href="assess_test.php" class="<?php echo $one_panel?>">
+				<a href="assess_practical_recording.php" class="<?php echo $one_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Test knowledge</h4>
+						<h4>Record a practical session</h4>
 					</div>
 				</a>
-				<a href="assess_offline.php" class="<?php echo $two_panel?>">
+				<a href="assess_practical_offline.php" class="<?php echo $two_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Traditional (Offline) Assessment</h4>
-					</div>
-				</a>
-				<a href="assess_understand.php" class="<?php echo $three_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Understanding Implications</h4>
-					</div>
-				</a>
-				<a href="assess_self.php" class="<?php echo $four_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Self-Assessment</h4>
-					</div>
-				</a>
-				<a href="assess_group.php" class="<?php echo $five_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Group Work</h4>
-					</div>
-				</a>
-
-			</div>
-<?php
-}
-
-function assess_testselector ($selected) {
-	$one_panel=$two_panel="panel panel-warning flex-item";
-	if ($selected=="quick") {$one_panel="panel panel-success flex-item";}
-	if ($selected=="depth") {$two_panel="panel panel-success flex-item";}
-?>
-			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
-
-				<div class="flex-container">
-				<a href="assess_test_quick.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Quick test</h4>
-					</div>
-				</a>
-				<a href="assess_test_depth.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Test more depth</h4>
+						<h4>Assignment with no electronic submission</h4>
 					</div>
 				</a>
 			</div>
 <?php
 }
-
-function assess_groupselector ($selected) {
-	$one_panel=$two_panel="panel panel-warning flex-item";
-	if ($selected=="collaborative") {$one_panel="panel panel-success flex-item";}
-	if ($selected=="discussion") {$two_panel="panel panel-success flex-item";}
-?>
-			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
-
-				<div class="flex-container">
-				<a href="assess_group_collaborative.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Collaborative</h4>
-					</div>
-				</a>
-				<a href="assess_group_discussion.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Discussion based</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-
-function assess_group_discussionselector ($selected) {
-	$one_panel=$two_panel="panel panel-warning flex-item";
-	if ($selected=="synch") {$one_panel="panel panel-success flex-item";}
-	if ($selected=="asynch") {$two_panel="panel panel-success flex-item";}
-?>
-			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
-
-				<div class="flex-container">
-				<a href="assess_group_discussion_synch.php" class="<?php echo $one_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Synchronous</h4>
-					</div>
-				</a>
-				<a href="assess_group_discussion_asynch.php" class="<?php echo $two_panel?>">
-					<div class="panel-heading flexpanelbody">
-						<h4>Asynchronous</h4>
-					</div>
-				</a>
-			</div>
-<?php
-}
-
-function assess_selfselector ($selected) {
+function assess_communicationselector ($selected) {
 	$one_panel=$two_panel=$three_panel="panel panel-warning flex-item";
-	if ($selected=="repeat") {$one_panel="panel panel-success flex-item";}
-	if ($selected=="peer") {$two_panel="panel panel-success flex-item";}
-	if ($selected=="reflect") {$three_panel="panel panel-success flex-item";}
+	if ($selected=="discuss") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="personal") {$two_panel="panel panel-success flex-item";}
+	if ($selected=="shared") {$three_panel="panel panel-success flex-item";}
+
 ?>
-			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+				<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
 
 				<div class="flex-container">
-				<a href="assess_self_repeat.php" class="<?php echo $one_panel?>">
+				<a href="assess_communication_discuss.php" class="<?php echo $one_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Repeatable</h4>
+						<h4>Debate and Discuss</h4>
 					</div>
 				</a>
-				<a href="assess_self_peer.php" class="<?php echo $two_panel?>">
+				<a href="assess_communication_personal.php" class="<?php echo $two_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Peer</h4>
+						<h4>Personal Writing</h4>
 					</div>
 				</a>
-				<a href="assess_self_reflect.php" class="<?php echo $three_panel?>">
+				<a href="assess_communication_shared.php" class="<?php echo $three_panel?>">
 					<div class="panel-heading flexpanelbody">
-						<h4>Reflective</h4>
+						<h4>Shared, multiple authors</h4>
 					</div>
 				</a>
-
 			</div>
 <?php
 }
 
-/* Functions for the Assessment section of the decision tree
- * ------------------------------------------------------------------------------
- */
+function assess_communication_whenselector ($selected) {
+	$one_panel=$two_panel="panel panel-warning flex-item";
+	if ($selected=="now") {$one_panel="panel panel-success flex-item";}
+	if ($selected=="timed") {$two_panel="panel panel-success flex-item";}
+
+?>
+			<div class = "flexarrow"><span class = "fa fa-3x fa-arrow-down">&nbsp;</span></div>
+
+				<div class="flex-container">
+				<a href="assess_communication_discuss_synch.php" class="<?php echo $one_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Here and Now</h4>
+					</div>
+				</a>
+				<a href="assess_communication_discuss_asynch.php" class="<?php echo $two_panel?>">
+					<div class="panel-heading flexpanelbody">
+						<h4>Over Time</h4>
+					</div>
+				</a>
+			</div>
+<?php
+}
+ 
 ?>

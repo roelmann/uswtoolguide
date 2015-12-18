@@ -12,9 +12,10 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("group");
-				assess_groupselector("discussion");
-				assess_group_discussionselector("");
+				assessselector("communication");
+				assess_communicationselector("discuss");
+				assess_communication_whenselector("timed");
+				selectortooldetail("forum","");
 			?>
 			
 			

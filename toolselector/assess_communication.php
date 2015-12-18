@@ -12,10 +12,8 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("self");
-				assess_selfselector("peer");
-				selectortooldetail("workshop","");
-
+				assessselector("communication");
+				assess_communicationselector ("");
 			?>
 			
 			

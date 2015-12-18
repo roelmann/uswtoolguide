@@ -22,7 +22,7 @@
 			$styleCC='warning';
 			$textCC='Maybe. Images can be added into fourm posts, blogs, wikis or any other area where students can create content.';
 			// Blooms
-			$styleB='warning';
+			$styleB='success';
 			$textB='5/6 <br />Understand, Apply, Analyse, Evaluate, Create.<br />When used by students in blogs/wikis/forums';
 
 			// Additional info

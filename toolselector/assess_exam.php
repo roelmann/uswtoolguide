@@ -12,8 +12,11 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("offline");
-				selectortooldetail("assignment","");
+				assessselector("exam");
+				echo '<h2>Note: There are two tools you could use to set quizzes, tests and exams. Please follow the links to find out about each to determine which is best for you.</h2>';
+				selectortooldetail("quiz","");
+				selectortooldetail("qmp","");
+
 			?>
 			
 			

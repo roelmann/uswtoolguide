@@ -23,7 +23,7 @@
 			$styleCC='warning';
 			$textCC='Maybe. If activities are planned in conjunction with web-cam or text chat.';
 			// Blooms
-			$styleB='warning';
+			$styleB='success';
 			$textB='5/6 Understand, Apply, Analyse, Evaluate, Create. Most useful in combination with the chat or webcam tools';
 			
 			// Additional info

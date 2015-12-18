@@ -14,8 +14,11 @@ require ('../lib.php');
 				firstselector("transfer");
 				communicateselector("single");
 				communicate_singleselector("navigation");
-				communicate_single_navigationselector("");
+				communicate_single_navigationselector("button");
 			?>
+			<div class="well">
+				<p>You will find information and guides about how to add Navigation Menu items to your module on the <a href="http://teach.southwales.ac.uk/blackboard/building/">Building your Modules pages of TEACH</a>.</p>
+			</div>
 			
 			
 		</div><!-- Main-Content -->

@@ -16,9 +16,10 @@ header img {
     float:left;
     margin-top:10px;
 }
-header h1 {
+header h1,
+header h2 {
     float:left;
-    margin-left:40px;
+    margin:5px 0 0 40px;
 }
 .clearfix {
     clear:both;
@@ -40,6 +41,9 @@ header h1 {
 .maintitlerow h4 {
     font-weight:900;
 }
+.maintitlerow h3 span.fa {display:none;}
+.detail h3 span.fa {display:none;}
+.detail .flexrowheader h3 {font-size:200%;}
 
 .fa-3x.fa-circle {
     display:none;
@@ -313,3 +317,7 @@ button.panel.flexrowheader {
 .toolguide .headerbuttonswitches a[href="toolguide.php"] {display:none;}
 .toolindex .headerbuttonswitches a[href="toolindex.php"] {display:none;}
 .detail .headerbuttons a[href="#footer"] {display:none;}
+
+.detail .additional h3 {font-size:150%;}
+
+i[data-toggle="popover"] {cursor:pointer;}

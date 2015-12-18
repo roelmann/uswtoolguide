@@ -17,10 +17,10 @@
 			$textAL='No. Announcements are limited in that students cannot post back or start new topics.';
 			// Communication & Interaction
 			$styleCI='danger';
-			$textCI='No. Announcements are limited in that students cannot post back or start new topics. They are a "push" tool.';
+			$textCI='No. Announcements are limited in that students cannot post back or start new topics. They are a push tool.';
 			// Co-Creation of Content
 			$styleCC='danger';
-			$textCC='No. Announcements are limited in that students cannot post back or start new topics. They are a "push" tool.';
+			$textCC='No. Announcements are limited in that students cannot post back or start new topics. They are a push tool.';
 			// Blooms
 			$styleB='danger';
 			$textB='None. This is not a learning activity, but information transfer.';

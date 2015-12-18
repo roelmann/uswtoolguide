@@ -12,10 +12,8 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("group");
-				assess_groupselector("discussion");
-				assess_group_discussionselector("synch");
-				selectortooldetail("webconference","");
+				assessselector("practical");
+				assess_practicalselector("");
 			?>
 			
 			

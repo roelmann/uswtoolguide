@@ -12,8 +12,11 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("self");
-				assess_selfselector("");
+				assessselector("practical");
+				assess_practicalselector("offline");
+				echo '<h2>Note: There are two tools you could use to set assignments with no electronic submission - but still use the tool for providing feedback in a familiar way. Please follow the links to find out about each to determine which is best for you.</h2>';
+				selectortooldetail("assignments","");
+				selectortooldetail("turnitin","");
 			?>
 			
 			

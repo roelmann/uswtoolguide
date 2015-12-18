@@ -12,7 +12,7 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-//				assessselector("");
+				assessselector("");
 echo 'The Assessment section of this tool selector is Work In Progress at this time';
 			?>
 			

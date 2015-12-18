@@ -17,6 +17,7 @@
 				<p>In this way you can follow each branch through until the recommended tool is shown on the page, with the green shaded panels providing a 'breadcrumb trail' of your choices.<br>At any point you can go back to any step by simply clicking the relevant choice - in the above example you could return to the Co-Create options by clicking 'Co-Create Content' and this would return to...</p>
 				<p class="row flex-container"><span class="flex-item panel panel-warning panel-heading">Communicate Information</span><span class="flex-item panel panel-warning panel-heading">Assessments</span><span class="flex-item panel panel-warning panel-heading">Peer/Student/Tutor interactions</span><span class="flex-item panel panel-success panel-heading">Co-Create content</span></p>
 				<p class="row flex-container"><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span><span class="flex-item panel panel-warning panel-heading">Single Document</span><span class="flex-item panel panel-warning panel-heading">Discussion</span><span class="flex-item panel panel-default panel-heading" style="visibility:hidden;">&nbsp;</span></p>
+				<p><br><strong>You can also view an image of the Selector as a Mind Map from the buttons at the top of the page.</strong></p>
 			</div>
 		</div><!-- using -->
 		<div class="more flex-item panel panel-default">
@@ -31,6 +32,7 @@
 				<ul>
 					<li>LINK TO POB PAGE HERE</li>
 				</ul>
+			<a class = "btn btn-success btn-lg" href="#header"><span class="fa fa-arrow-up">&nbsp;</span>Return to top of page</a>
 
 			</div>
 		</div><!-- more info -->

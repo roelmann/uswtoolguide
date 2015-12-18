@@ -12,9 +12,9 @@ require ('../lib.php');
 			
 			<?php
 				firstselector("assess");
-				assessselector("self");
-				assess_selfselector("reflect");
-				selectortooldetail("feedback","");
+				assessselector("communication");
+				assess_communicationselector("shared");
+				selectortooldetail("wiki","");
 			?>
 			
 			

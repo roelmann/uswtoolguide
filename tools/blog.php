@@ -23,7 +23,7 @@
 			$textCC='Blogs are primarily for personal writing, although they can have comments enabled for other users to respond in a limited manner.';
 			// Blooms
 			$styleB='success';
-			$textB='5/6<ul><li>Understand</li><li>Apply</li><li>Analyse</li><li>Evaluate</li><li>create</li></ul>';
+			$textB='5/6 understand, apply, analyse, evaluate, create';
 
 			// Additional info
 			$additional="<h3>".$title."</h3>

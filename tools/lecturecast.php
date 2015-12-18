@@ -2,7 +2,7 @@
 			<?php
 			//Tool name
 			$name='lecturecast';
-			$title='Panopto Lecture Casting';
+			$title='Lecture Casting - Panopto';
 			$text='Recording and playback of lectures, events and seminars.';
 			$software='Panopto';
 

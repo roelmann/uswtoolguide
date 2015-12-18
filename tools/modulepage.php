@@ -19,10 +19,10 @@
 			$styleCI='danger';
 			$textCI='No. This is simply an overview of information. ';
 			// Co-Creation of Content
-			$styleCC='warning';
+			$styleCC='danger';
 			$textCC='No. This is simply an overview of information. ';
 			// Blooms
-			$styleB='warning';
+			$styleB='danger';
 			$textB='None. This is simply an overview of information. ';
 
 			// Additional info
