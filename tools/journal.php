@@ -3,31 +3,31 @@
 			//Tool name
 			$name='journal';
 			$title='Journals';
-			$text='Can be used for ...';
+			$text='Journals are a self-reflective tool that allows Students to post personal reflections.';
 			$software='Blackboard';
 
 			// Ease of Use
 			$styleEU='success';
-			$textEU='...';
+			$textEU='Easy to set up using built in Blackboard tools';
 			// Information Transfer
-			$styleIT='success';
-			$textIT='...';
+			$styleIT='danger';
+			$textIT='No. Journals are a personal reflective writing tool and not primarily intended for passing information.';
 			// Assess Learning
-			$styleAL='warning';
-			$textAL='...';
+			$styleAL='success';
+			$textAL='Yes. Reflective writing in a journal can be submitted and assessed';
 			// Communication & Interaction
-			$styleCI='success';
-			$textCI='...';
+			$styleCI='danger';
+			$textCI='No. Journals are intended as a form of personal reflective writing. They are not primarily intended as a communication and interaction tool.';
 			// Co-Creation of Content
-			$styleCC='success';
-			$textCC='...';
+			$styleCC='danger';
+			$textCC='No. Journals are intended as a form of personal reflective writing. They are not designed as a collaborative tool.';
 			// Blooms
 			$styleB='success';
 			$textB='5/6 <br />Understand, Apply, Analyse, Evaluate, Create';
 
 			// Additional info
 			$additional="<h3>".$title."</h3>
-			<p>journals - additional info</p>";
+			<p>You can find out more about setting up and using Blackbaord Journals from our <a href='http://teach.southwales.ac.uk/blackboard/journals/'>TEACH pages</a>.</p>";
 
 			// Display panels
 			if(!$printing){

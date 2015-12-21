@@ -27,7 +27,7 @@
 
 			// Additional info
 			$additional="<h3>".$title."</h3>
-			<p><a href='https://en-us.help.blackboard.com/Learn/9.1_Older_Versions/9.1_SP_12_and_SP_13/Instructor/060_Course_Tools/Glossary'>Blackboard Help - Glossaries</a></p>";
+			<p>You can discover more about using Glossaries in Blackboard from the <a href='http://teach.southwales.ac.uk/blackboard/glossary/'>TEACH pages</a>.</p>";
 
 			// Display panels
 			if(!$printing){
